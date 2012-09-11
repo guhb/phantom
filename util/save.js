@@ -11,9 +11,9 @@
     page.util = page.util || page.util || {};
 
     page.util.save = function (file, content, mode) {
-    	var fs = require("fs");
-    	f= fs.open(gConfig.downloadDirectory + "/" + file, mode);
-    	f.write(content);
-    	f.close();
+        var fs = require("fs");
+        f= fs.open(gConfig.downloadDirectory + "/" + file, mode);
+        f.write(content);
+        f.close();
     }
 })(page, gConfig);

@@ -18,10 +18,12 @@ if (system.args.length === 1) {
             console.log('FAIL to load the address');
         } else {
             page.loadLibrary(gConfig.libraries.files, gConfig.libraries.path);
-            page.loadApp("grab_ifanr.js", gConfig.appDirectory);
-            phantom.loadPlugins("save.js", "util");
-            console.log(page.util);
-            page.util.save(gConfig.downloadDirectory + "/" + "planet-qt.txt", "page.util.save", "a");
+            //page.loadApp("grab_ifanr.js", gConfig.appDirectory);
+            //page.loadApp("grab_qt_planet.js", gConfig.appDirectory);
+            page.loadApp("grab_kde_planet.js", gConfig.appDirectory);
+            //phantom.loadPlugins("save.js", "util");
+            //console.log(page.util);
+            //page.util.save("planet-qt.txt", "page.util.save", "a");
             // run the app and collect retruned data;
             var articles = page.evaluate(page.app);
 
@@ -37,7 +39,7 @@ if (system.args.length === 1) {
                 return string;
             }
 
-            file = fs.open(gConfig.downloadDirectory + "/" + "planet-qt.txt", "a");
+            file = fs.open(gConfig.downloadDirectory + "/" + "planet-kde.txt", "a");
             articles.forEach(function (item) {
                 file.write("\nTITLE:")
                 file.write(decorateContent(item.title));

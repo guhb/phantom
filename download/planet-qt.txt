@@ -1,60 +1,616 @@
 
-TITLE:Everpurse：能无线充电的皮包
+TITLE:Qt acquisition proceeding as planned
 
-SOURCE:陈一斌
+SOURCE:Digia's Qt Commercial Blog
 
-CONTENT:<p style="text-align: center;"><a href="http://www.ifanr.com/152189" target="_blank" rel="external"><img class="alignnone size-full wp-image-152195" title="Everpurse 4" src="http://www.ifanr.com/wp-content/themes/apple4us/images/grey.gif" alt="" width="600" height="375" original="http://cdn.ifanr.cn/wp-content/uploads/2012/09/Everpurse-4.jpg"></a></p><p>外置电池又笨又重又丑，而且每次充电还必须拿出来，给手机插上充电线，无怪乎“无线充电”这个概念受到人们欢迎。那些密密麻麻，相互缠绕在一起的充电线、电源线让人感到烦躁。</p><p>在 Kickstarter 上，<a href="http://www.kickstarter.com/projects/everpurse/everpurse-magically-charges-your-phone-all-day#DoesThePhonGetCharWire" target="_blank">Everpurse</a> 将皮包变成了移动电源——若它只是一个<a href="http://www.ifanr.com/74043">能充电的手提包</a>的话，那么就没有介绍的必要——它实际上是一个结合了无线充电技术的皮包，而且使用起来简单方便，当你的 iPhone 没有电时，只要将手机放进皮包里面，就会自动充电。 <a href="http://www.ifanr.com/152189#more-152189" class="more-link">全文 » </a></p>
+CONTENT:
+<p>A quick update from Digia’s side on how things are going with the planned acquisition of Qt. &nbsp; The planned acquisition of Qt is proceeding as everyone has hoped and we aim to have completed everything still within Q3. At the moment, we are in the...
+</p>
 
-TITLE:玩具反斗城推出平板奇兵
+TITLE:Towards Qt 5.0
 
-SOURCE:陈一斌
+SOURCE:Qt Labs Blog
 
-CONTENT:<p style="text-align: center;"><a href="http://www.ifanr.com/152079" target="_blank" rel="external"><img class="alignnone size-full wp-image-152089" title="Toys R Us" src="http://www.ifanr.com/wp-content/themes/apple4us/images/grey.gif" alt="" width="600" height="375" original="http://cdn.ifanr.cn/wp-content/uploads/2012/09/Toys-R-Us.jpg"></a></p><p>根据《财富》杂志的世界 500 强排行榜， Toys “R” Us 位列 194 位，但这家以卖玩具为主的大型零售店最近两年却不好过。<a href="http://www.retail-week.com/sectors/general-merchandise/toys-r-us-suffers-year-end-profit-slump/5030854.article" target="_blank">去年</a>公司的税前利润从 3.04 亿降至 2.22 亿美元，营业额也下降 9%。今年假期销售业绩比去年<a href="http://www.reuters.com/article/2012/03/21/toysrus-idUSL1E8QL2DI20120321" target="_blank">下滑</a> 4700 万美元。</p><p>受业绩表现不佳影响， 玩具反斗城（Toys “R” Us）的 IPO 计划从前年筹备到现在，依然停留在纸上谈兵的阶段。 <a href="http://www.ifanr.com/152079#more-152079" class="more-link">全文 » </a></p>
+CONTENT:
+<p></p><p>It’s been now some days since we released the Qt 5 beta, and thus it is time to look ahead to what’s going to happen in the next few months and the plans for the Qt 5.0.0 final version release.</p>
+<h3>Moving to Digia</h3>
+<p>The first important thing is that the planned transfer of Qt from Nokia to Digia is anticipated to be finalized in Q3. I personally have also chosen to join Digia and continue my work on Qt from there. Having now had quite a few talks with Digia, I believe this is going to be a great opportunity both for Qt and for the development teams in Oslo and Berlin.</p>
+<p>From all I can see, Digia has a solid, long-term strategy with Qt, focusing strongly on the product, pushing for Qt 5 and making Qt the best possible development tool out there. This is a large acquisition for Digia, which underlines how strategic they believe Qt will be for them in the future. </p>
+<p>Digia wants to grow the Qt ecosystem together with other players in the market. They understand the importance of keeping that ecosystem unified. They also understand how important dual licensing is for the Qt ecosystem.</p>
+<p>The teams planned to transfer from Nokia will be a significant addition to the business unit that is currently selling Qt Commercial. The people coming from Nokia are, to a large extent, developers and the former Nokia teams will actually form the majority of the development team in Digia.</p>
+<p>Of course, there will be changes for the Nokia Qt people joining Digia, but I do believe that they will be changes for the better. These changes will include a broader focus on customer needs and a more immediate feedback cycle from our customers to development. This is something I’m personally looking forward to.</p>
+<p>But some things are planned to stay the same. We aim to continue the strong focus on product development and pushing the boundaries of what can be done with Qt. Qt 5 is planned to be be the central focus of most of our work, both short and longer term.</p>
+<h3>Finalizing the Qt 5.0 release</h3>
+<p>One of the most important things to do in the short term now is to finalize Qt 5. The Qt 5 beta has now added binary packages for the main platforms, but it is still missing some pieces. We are aiming at including Qt Creator into the Qt 5.0 release and creating a package that is similar to the Qt SDK packages we have released for 4.x.</p>
+<p>We had a workshop on Monday in Oslo trying to identify the work that remains to be done. Apart from general bug fixing a couple of items clearly showed up, and we will strongly focus on these for the next couple of weeks:</p>
+<ul>
+<li>Documentation
+<p>While the individual class documentation is in an OK state, lots of work remains to be done to tie it all together. We are lacking overview documentation, intros to Qt and the different modules, some getting started help and a good landing page. Making the difference between Qt Essentials and Add-ons clear, as well as cross-referencing between modules still requires work. We have now a team in Oslo that will focus on putting all of this in place.
+</p></li>
+<li>Examples and Demos
+<p>A lot of the existing examples in Qt have been there for a long time. We will go through the list and do a cleanup of the examples, probably removing a large part of them in the process and focusing on having a small but high quality set of examples available for Qt 5.0.
+</p></li>
+<li>Finishing and testing our reference platforms
+<p>This is mainly bug fixing and testing, but nevertheless extremely important. On some platforms we will need to do some more work than on others. </p>
+<p>On Windows, we will change the default build to use ANGLE (OpenGL on top of DirectX) to avoid issues with bad OpenGL drivers and remote desktop. In addition this will make the Multimedia and WebKit integration easier and with improved performance. Of course, building against the regular desktop OpenGL drivers will still be supported.</p>
+<p>On Mac and Linux, there’s also work required to finish the multimedia integration as well as many other smaller issues.</p>
+<p>WebKit 2 and the QML module for WebKit have been disabled for the beta. The WebKit team is now very close to having this work on all reference platforms.
+</p></li>
+<li>Qt Creator
+<p>We are aiming at adding Qt Creator to the binary packages. The Berlin team will focus on making sure Qt Creator will work as smoothly as possible together with Qt 5.
+</p></li>
+<li>Packaging
+<p>Finally, we need to pull all the pieces together into a decent set of packages. What we have seen from the beta is that one can easily underestimate that part of the work, so we will need to have some extra focus in this area.
+</p></li>
+</ul>
+<p>I would like to aim for a second beta as soon as possible, but only once most of the issues mentioned above are resolved. A realistic time frame for this second beta release is probably in around 4-6 weeks from now. After that we will quickly push for a release candidate and a Qt 5.0 final release.</p>
+<h3>Longer term</h3>
+<p>As soon as the team has moved to Digia, and we start having some time again in parallel to finishing Qt 5, we plan to focusing also on new things. Digia has already publicly communicated some areas they consider important, such as an Android and iOS support. In addition, the teams in Berlin and Oslo have been coming up with many good ideas. </p>
+<p>We are now in the process of sorting through these ideas and prioritizing them. Our goal is to be as open and transparent as we can be about what we will be doing, as well as what we’re not going to do. In this way, we aim to avoid duplicating work and give everybody the chance to participate in the Qt Project.</p>
 
-TITLE:杰克·多西：我从未想过成为企业家
+TITLE:Sign up now for Qt Developer Conference 2012, Berlin!
 
-SOURCE:何宗丞
+SOURCE:» KDAB on Qt
 
-CONTENT:<p><a href="http://www.ifanr.com/152049" rel="external"><img class="aligncenter size-full wp-image-152057" title="jack-dorsey" src="http://www.ifanr.com/wp-content/themes/apple4us/images/grey.gif" alt="" width="600" height="375" original="http://cdn.ifanr.cn/wp-content/uploads/2012/09/jack-dorsey.jpg"></a></p><blockquote><p>“我想成为 Bruce Lee（李小龙），我想成为一个裁缝，我想亲手制作工艺品与他人分享。”</p></blockquote><p>这是 Twitter 联合创始人兼董事长杰克·多西（Jack Dorsey）在旧金山举办的 TechCrunch Disrupt 大会上说的<a href="http://techcrunch.com/2012/09/10/i-never-wanted-to-be-an-enterpreneur-says-jack-dorsey/" target="_blank">一席话</a>。字句之间，无不透露出一个理想主义者的浪漫情怀，同时也传达出他个人对未来之路的思考：开放、改变和突破。</p><p>多西在大会上提到，人们总是习惯性的假设 Twitter 的奠基时刻，每个人都把 Ev、Biz 和他当作公司的创始人。但产品在长期的发展中总是有很多里程碑。</p><p>从 Twitter 创始人、首任 CEO 到公司名义上的董事，再到执行董事，同时作为 Square 公司的 CEO，多西的创业经历可谓跌宕起伏。创办的公司仅两年，多西就被好朋友威廉姆斯和董事会“赶走”。几年以后，多西回归 Twitter 担任执行董事，但更多负责产品研发。&nbsp; <a href="http://www.ifanr.com/152049#more-152049" class="more-link">全文 » </a></p>
+CONTENT:
+<p>Brought to you by KDAB in cooperation with ICS and KDE e.V., this 3 day event will have a terrific agenda of lectures, presentations, trainings and labs, focusing both on the latest technologies introduced with Qt 5, and the tried-and-true technologies in use today.</p>
+<p>The Qt Developer Conference aims to provide an excellent opportunity to meet peers, learn about new technology and developments in Qt, get market and ecosystem news and explore the services and product offerings available in the Qt environment.</p>
+<p>In line with past offerings, the first day of the conference will be dedicated to Qt training events covering a wide variety of Qt related topics for developers of all skill levels.</p>
+<p>The Qt Developer Conference takes place from 12th – 14th November at Café Moskau, Berlin.</p>
+<p>Sign up now at: <a href="http://qtconference.kdab.com">qtconference.kdab.com</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
-TITLE:TouchChina 景点通：一个守候了两年的应用
+TITLE:Help needed
 
-SOURCE:黄龙中
+SOURCE:Qt Labs Blog
 
-CONTENT:<p><a href="http://www.ifanr.com/151633" target="_blank" rel="external"><img class="aligncenter size-full wp-image-151681" src="http://www.ifanr.com/wp-content/themes/apple4us/images/grey.gif" alt="" width="600" height="375" original="http://cdn.ifanr.cn/wp-content/uploads/2012/09/joey-shen-touchchina-ifanr.jpeg"></a></p><p>TouchChina 是我们 iSeed 栏目<a href="http://www.ifanr.com/24668">比较早期</a>采访的团队，两年前我们提问他们有没有天使投资，得到的答案还是“自筹资金”，如今这个团队已经拿到了天使投资（2011 年 6 月，规模为“几百万元人民币”），正在谈 A 轮。与平时接触的团队不同，TouchChina 团队的“体量”仍然非常小，员工数量控制在 30 人以内，仅仅 26 人。今天再去拜访的时候，虽然已经不在两年前的办公地点，但仍然是一个住宅小区，160 平米的空间里装下了 20 多个人，推门进去，一股浓郁的创业气息扑面而来。</p><p>这次拜访缘起于上一周 TouchChina 推出的新应用“景点通”，这个应用把 TouchChina 原先做过的城市导览囊括到了一个 App 中，这一功能，是两年前采访中创始人沈卓立（Joey Shen）说到要做的，为什么时隔两年后才做出来，他在访谈中给出了答案。Joey 还介绍了 TouchChina 两年来的变化，除了人员、融资情况，TouchChina 依然深耕于“目的地旅游”这个领域，“两年前跟爱范儿说的方向，现在基本是沿着这个在走”。</p><p>TouchChina <a href="http://itunes.apple.com/cn/app/id557070666" target="_blank">景点通</a> Android 版在上周四（9 月 6 日）正式上线，iOS 版在周五上线，目前每天的下载量约为 2-3 万。除了景点通之外，TouchChina 在今年 6 月发布了“<a href="http://itunes.apple.com/cn/app/de-tie-zhong-guo-touchchina/id530096786" target="_blank">地铁中国</a>”应用，收录了北京、广州、香港等 8 个城市的地铁线路。目前“地铁中国”的激活用户量在 25 万左右。</p><p> <a href="http://www.ifanr.com/151633#more-151633" class="more-link">全文 » </a></p>
+CONTENT:
+<p></p><p>So, <a href="http://labs.qt.nokia.com/2012/08/30/qt-5-beta-is-here/">we have the Qt 5 beta out</a>! The next steps now are to polish it to make the Qt 5.0.0 release as impressive as possible.</p>
+<p>One big, pending task we’ve identified is making sure the class reference documentation is consistent with the changes we’ve made in Qt 5. Since this was originally written when widgets were the only way to do GUIs in Qt, some of the documentation is rather widget-centric in how it presents things. There might also be other content in there that is no longer correct, or less relevant, with the changes made in Qt 5.</p>
+<p>The only way to fix this is really to go through the classes manually. We need to actually read the documentation for each class to make sure it still makes sense and presents Qt in a way that give people the information they need to make good decisions. If it is somehow unclear or seems stuck in the past, we need to update it with something better.</p>
+<p>One example of such an update was in <a href="http://doc-snapshot.qt-project.org/5.0/qsyntaxhighlighter.html">the QSyntaxHighlighter docs</a>, where the description of the class referred to a constructor which had been removed in Qt 5, when the class was made independent of widgets. This reference was simply removed. Another example was <a href="http://doc-snapshot.qt-project.org/5.0/qtextdocument.html">the QTextDocument docs</a>, which have been rephrased a little to identify the class as a general rich text layout engine, and not only as the back-end for QTextEdit, which is just one isolated use case in the context of Qt 5. Note, though, that for the majority of classes, there will not be any issues, but we won’t know for sure until someone’s read the documentation and verified it.</p>
+<p>If you’ve been looking to get into developing on the Qt Project, this might be good time to get started. It’s definitely a very useful way to get familiar with the different parts of Qt and the infrastructure around it, and the patches you’ll be making are simple and low risk. </p>
+<p>To organize the work, we’ve made <a href="http://qt-project.org/wiki/Qt5ClassDocumentationCleanUp">a wiki-page</a>. If you want to help out, please edit the page and replace “unassigned” with your name next to the class you’re claiming to avoid duplicate work. If the class requires patching, please make sure the change is actually merged before you mark the class as “done”. </p>
+<p>To get started with Qt development, go to <a href="http://qt-project.org/">the Qt Project homepage</a> and look at the guides posted there. You might also have use for <a href="http://doc-snapshot.qt-project.org/qdoc/qdoc-index.html">the QDoc reference documentation</a> to figure out what all the magic tags are for.</p>
+<p>Finally, just ask if you have any questions. We really appreciate any help we can get with this!</p>
 
-TITLE:品读：“后 PC 时代”的剪报本
+TITLE:Call for Presentations – Qt Developer Conference
 
-SOURCE:陈一斌
+SOURCE:» KDAB on Qt
 
-CONTENT:<p style="text-align: center;"><a href="http://www.ifanr.com/151165" target="_blank" rel="external"><img class="alignnone size-full wp-image-151925" title="newspaper" src="http://www.ifanr.com/wp-content/themes/apple4us/images/grey.gif" alt="" width="600" height="375" original="http://cdn.ifanr.cn/wp-content/uploads/2012/09/newspaper.jpg"></a></p><p>大概是九几年的时候，报纸是最重要的信息渠道。当时的我，最爱看的报纸是《参考消息》。因为它内容丰富，有国内外的时政，还有社会新闻，最重要的还有科技以及军事栏目。从小时候开始，我喜欢剪报——一些重要的内容，可以参考的内容，从报纸上剪下来，粘在一本册子里。</p><p>有了网络后，这种做法就演变成在网页上复制一段文字，保存为 TXT 文件，放在文件夹里。后来，我甚至干脆直接将整个网络作为消息来 源，在 Firefox 上使用 ScrapBook 来收藏有价值的网页。到现在，大中小屏幕充斥着我的生活，为了方便，我转投 Evernote 阵营。 <a href="http://www.ifanr.com/151165#more-151165" class="more-link">全文 » </a></p>
+CONTENT:
+<p>KDAB will host the Qt Developer Conference from November 12th to 14th and we hope to have as many interesting presentations as possible. We therefore invite you to send in proposals for presentations at this URL: <a href="https://qtconference.kdab.com/node/12">qtconference.kdab.com/node/12</a></p>
+<p>As time to the conference is short, the deadline for proposals is September 23rd (only three weeks from now), and we hope to have a program finalized by October 8th.</p>
+<p><span id="more-2615"></span></p>
+<p>We encourage the submission of proposals for presentations that cover as wide a range of Qt and Qt in use as possible. The chosen venue allows for several tracks to be run in parallel and we would like to ensure there are interesting and relevant presentations for all attendees.</p>
+<p>To ensure as broad a program as possible we have asked a few highly respected people representing Qt’s best interests to help us select the presentations:</p>
+<ul>
+<li>Thiago Macieira, Intel</li>
+<li>Harri Porten, Froglogic</li>
+<li>George Staikos, RIM</li>
+</ul>
+<p>A big <b>thank you</b> goes out to them.</p>
 
-TITLE:【更新】华为 MediaPad 10 FHD：蜜派的甜与苦
+TITLE:Why You Should Always Use SSL for API Calls
 
-SOURCE:王 崇旭
+SOURCE:Cutehacks
 
-CONTENT:<p style="text-align: center;"><a href="http://www.ifanr.com/151859" target="_blank" rel="external"><img class="aligncenter" style="padding-top: 0px; padding-left: 0px; margin-top: 2px; margin-bottom: 2px; padding-right: 0px; border: 0px;" src="http://www.ifanr.com/wp-content/themes/apple4us/images/grey.gif" alt="DSC_0206" width="600" height="376" border="0" original="http://cdn.ifanr.cn/wp-content/uploads/2012/09/DSC_0206_thumb.jpg"></a></p><p>在拿到华为 MediaPad 10 FHD 这款 Android 四核平板之前，我已经是一名有着两年多“资历”的 iPad 用户。而此前，大部分 Android 平板都给我留下了“空有一身配置，没有内容支撑”的印象。</p><p>亚马逊的“搅局平板” Kindle Fire，对 Android 平板阵营来说，似乎是黑暗中的一道光亮。今年的 Google I/O 上，Google 联手华硕推出廉价平板 Nexus 7 的同时，也宣布与众多知名娱乐公司进行合作，在 Google Play 中提供更丰富的电影、电视剧以及电子杂志。用内容带动硬件销售的道路，愈加明晰。</p><p>华为的 MediaPad 10 FHD 尽管不是最有代表性的一部 Android 平板电脑，但这部“史上最强” Android 平板仍然折射着 Android 平板阵营的蜜和窘。 <a href="http://www.ifanr.com/151859#more-151859" class="more-link">全文 » </a></p>
+CONTENT:
+<p></p><div class="tweetmeme-button" id="tweetmeme-button-post-1037" style="float: right; margin-left: 10px; margin-bottom: 5px; padding: 4px 0 2px 4px; background: #fff;">
+<a href="http://api.tweetmeme.com/share?url=http%3A%2F%2Fcutehacks.com%2F2012%2F09%2F03%2Fwhy-you-should-always-use-ssl-for-api-calls%2Ftweetmeme_alias%3Dhttp%3A%2F%2Fwp.me%2FpPoYq-gJ%26tweetmeme_source%3Dcutehacks"><img height="61" src="http://api.tweetmeme.com/imagebutton.gif?url=http%3A%2F%2Fcutehacks.com%2F2012%2F09%2F03%2Fwhy-you-should-always-use-ssl-for-api-calls%2F" width="51"></a>
+</div>We recently had an interesting bug report for a <a href="http://itunes.apple.com/us/app/city-guides-offline-maps/id438740289?ls=1&amp;mt=8" title="project">project</a> we’re working on;<p></p>
+<blockquote><p>“I was going through attractions in Venice and was adding them to ‘my guide’, however when I reopened the App the very next day it shows my guide, but it is empty.”</p></blockquote>
+<p>This was a bit disconcerting to say the least! When your App suddenly start losing data, alarm bells and blinking lights go off and you scramble to fix it. However, the world of hotspots and ‘free’ wireless networks is a menagerie that’s difficult to reproduce in a lab environment.</p>
+<p>In this case, the App resumed normal operation once brought back online – which gives a hint to the cause. The fix was somewhat surprising and discovered by coincidence; You should always use SSL for all API calls! You’ll incur increased CPU use for decrypting data, and potentially have to <a href="http://blog.theanimail.com/iphone-encryption-export-compliance-for-apps-0">get approval</a> to use it – but it’s worth it! Let me explain;</p>
+<p>The real culprit in the scenario above is a neat thing called <a href="http://en.wikipedia.org/wiki/Captive_portal" title="Captive Portal">“Captive Portal”</a>. You’ve probably used when you have been out travelling, and purchased internet hours from an overpriced provider – or received a cupon from your friendly hotel clerk. Typically you open a browser to pass the Captive part of the portal. If your device is unfortunate enough to connect through a non-authenticated portal, your App could be in trouble.</p>
+<p>In most cases, the portal will immediately present a login dialog when you try to go online – asking you to accept TOC or give them some money. In this case, the platform will recognize that you are not actually online and prevent your App from making API calls (assuming you’re guarding for this in your implementation).</p>
+<pre>- (void)reachabilityChanged:(NSNotification *)notification
+{
+  // using Reachability from Apple: http://tinyurl.com/42mxger
+  NSUInteger status = [reachability currentReachabilityStatus];
 
-TITLE:新 iPhone 为何要“去三星化”？
+  BOOL isOnline = (NotReachable != status);
+  BOOL isUsingWiFi = (ReachableViaWiFi == status);
 
-SOURCE:何宗丞
+  // handle appropriately..
+}
+</pre>
+<p>Trouble begins when less friendly implementations hijack your DNS queries and present their own content in place of what you’re asking for.</p>
+<p>In the case of your App, regular HTTP API calls will appear to succeed, and return… garbage. Actually, they will return HTML content from the captive portal – but to your App it’s highly toxic garbage. In the scenario above, the App happily eats whatever content is served – promptly concludes there is nothing salient returned from the API call, and fails to display anything.</p>
+<p>If you use HTTPS however, you will immediately get a certificate failure and you can handle the situation gracefully;</p>
+<pre>NSError *error; // out parameter from NSUrlConnection::syndSynchronousRequest
 
-CONTENT:<p><a href="http://www.ifanr.com/151683" rel="external"><img class="aligncenter size-full wp-image-151709" title="iPhone 4" src="http://www.ifanr.com/wp-content/themes/apple4us/images/grey.gif" alt="" width="600" height="375" original="http://cdn.ifanr.cn/wp-content/uploads/2012/09/iPhone-4.jpg"></a></p><p>此前韩国经济日报援引未知的消息源称，三星已经从新 iPhone 内存芯片的首批供应商的名单中消失，DRAM 和 NAND 芯片将由 SK 海力士（SK Hynix）、日本尔必达（Elpida Memory）以及东芝等公司提供。不过据<a href="http://www.reuters.com/article/2012/09/07/net-us-apple-samsung-supply-idUSBRE88603A20120907" target="_blank">路透社的消息</a>称，三星依然在供应商名单上，但订单数量大减。</p><p>这不免让人联想到三星与苹果此前在专利上的一系列纠葛。不过消息源否认苹果此举受专利战的影响，称苹果很早就打算拓宽供应链体系。</p><p>其实，三星在苹果供应链体系的比例持续在降低。从 iPhone 4 起，苹果就不再使用三星的 LCD 屏幕。而此次相传的 in-cell 屏幕的供应商同样不包括三星。此外，有消息称，新一代的 iPhone 电池将由中国 ATL 和日本三洋提供。 <a href="http://www.ifanr.com/151683#more-151683" class="more-link">全文 » </a></p>
+switch (error.code)
+{
+  case NSURLErrorServerCertificateHasBadDate:
+  case NSURLErrorServerCertificateUntrusted:
+  case NSURLErrorServerCertificateHasUnknownRoot:
+  case NSURLErrorServerCertificateNotYetValid:
+    // Handle the certificate error
+    break;
+}
+</pre>
+<p>.. and present the user with a clarifying dialog;</p>
+<p><a href="http://cutehacks.files.wordpress.com/2012/09/stay_failed.png"><img alt="" class="aligncenter size-medium wp-image-1049" height="300" src="http://cutehacks.files.wordpress.com/2012/09/stay_failed.png?w=200&amp;h=300" title="stay_failed" width="200"></a></p>
+<p>While I would have loved to go to Venice to dissect and purge the issue – there’s an easy way to reproduce this environment using only your local network;</p>
+<p>1. Set up a Web server and DNS on your localhost.</p>
+<p>Personally I used Mac OS X’s Server App to quickly get it up and running, but there are multiple guides out there to do it using a mix of dhcp, dns and apache.</p>
+<p>2. After you’ve set up the DNS, add the hostname for the API calls you wish to block.</p>
+<p>Set them to point to your own host’s network IP address – and make sure the web server has a 404 page configured.</p>
+<p><a href="http://cutehacks.files.wordpress.com/2012/09/screen-shot-2012-09-03-at-9-54-47-am.png"><img alt="" class="alignnone size-medium wp-image-1050" height="172" src="http://cutehacks.files.wordpress.com/2012/09/screen-shot-2012-09-03-at-9-54-47-am.png?w=300&amp;h=172" title="Screen Shot 2012-09-03 at 9.54.47 AM" width="300"></a></p>
+<p>3. Switch the DNS entry of the wireless network on your device to your host IP address.</p>
+<p><a href="http://cutehacks.files.wordpress.com/2012/09/network.png"><img alt="" class="alignnone size-medium wp-image-1051" height="300" src="http://cutehacks.files.wordpress.com/2012/09/network.png?w=200&amp;h=300" title="" width="200"></a></p>
+<p>4. All calls to the URL will now return your /index.html or alternatively the 404 page you configured.</p>
+<p>In the case of using SSL it will provide an untrusted certificate that incorrectly claims to be your API endpoint.</p>
+<p>For us, the lesson is that SSL is invaluable in mobile Apps and should be the default when polling data – because it accurately lets you identify that you’re receiving data from the correct source, and that it has not been tampered with on the way.</p>
+<br>  <a href="http://feeds.wordpress.com/1.0/gocomments/cutehacks.wordpress.com/1037/" rel="nofollow"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/cutehacks.wordpress.com/1037/"></a> <img alt="" border="0" height="1" src="http://stats.wordpress.com/b.gif?host=cutehacks.com&amp;blog=12250730&amp;post=1037&amp;subd=cutehacks&amp;ref=&amp;feed=1" width="1">
 
-TITLE:Windows 8 的进化
+TITLE:Update: How to create Qt5 QMLExtensionPlugin
 
-SOURCE:积木
+SOURCE:Zchydem's Blog » Qt
 
-CONTENT:<p><a href="http://www.ifanr.com/151657" target="_blank" rel="external"><img class="aligncenter" style="padding-left: 0px; padding-right: 0px; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border: 0px;" src="http://www.ifanr.com/wp-content/themes/apple4us/images/grey.gif" alt="windows_8_review_beijing" width="600" height="375" border="0" original="http://cdn.ifanr.cn/wp-content/uploads/2012/09/windows_8_review_beijing_thumb.jpg"></a></p><p>前几天翻微博，看到有人说他已经在试用 Windows 8，不过完全禁掉了 Metro。我的第一反应是：你是怎么做到的？能不能告诉我？这完全暴露了我对 Metro 的偏见，或者，更准确的说，是我对 Metro 在桌面系统作用的怀疑。这基于两点经验：一是在使用桌面系统的时候，我几乎不用全屏（除了看视频）；二是 Live Tile 在大屏幕上违和感严重。比如 <a href="http://weibo.com/carloslol" target="_blank">@carloslol</a> 在微博上发的这幅图片：</p><p> <a href="http://www.ifanr.com/151657#more-151657" class="more-link">全文 » </a></p>
+CONTENT:
+<p>Some time ago I wrote a post how to port QtQuick1.X extensions to Qt5. In that post, I wrote how I created a VideoWidget QMLExtensionPlugin on Qt 4.7 and then what it takes to make it run on Qt5 too. Well, things has changed a bit since that post an I thought that I should [...]
+</p>
 
-TITLE:Worldreader：用 Kindle 改善非洲儿童的教育质量
+TITLE:It is here! Qt 5.0 Beta has been Released.
 
-SOURCE:陈一斌
+SOURCE:Digia's Qt Commercial Blog
 
-CONTENT:<p style="text-align: center;"><a href="http://www.ifanr.com/151629" rel="external"><img class="alignnone size-full wp-image-151639" title="kindle-devices-in-classroom-in-uganda" src="http://www.ifanr.com/wp-content/themes/apple4us/images/grey.gif" alt="" width="600" height="375" original="http://cdn.ifanr.cn/wp-content/uploads/2012/09/kindle-devices-in-classroom-in-uganda.jpg"></a></p><p>肯尼亚的一间课室，墙壁看上去仍未完工，只用石灰浆薄薄地涂了一层，黑板上横着几条裂缝，学生们的课桌是上满是伤痕，有的右上角已经不见了。在非洲国家，受师资、经济等条件的限制，教育问题非常突出，有的地区甚至连教材都没有。</p><p>三年前，David Risher 成立非营利组织 Worldreader，打算用 Kindle 来代替传统的纸质教材，帮助受贫困所困扰的非洲儿童解决教材问题。 <a href="http://www.ifanr.com/151629#more-151629" class="more-link">全文 » </a></p>
+CONTENT:
+<p>* Click here to view the Russian translation. I have great news for you. The Qt Project just released Qt 5.0 beta. Qt 5.0 beta offers you a good sneak preview of what will be available in the next major version of Qt. The release is available for...
+</p>
 
-TITLE:WorkFlowy：整理你的思绪
+TITLE:Qt 5 Beta is out!
 
-SOURCE:陈一斌
+SOURCE:The Qt Blog
 
-CONTENT:<p style="text-align: center;"><a href="http://www.ifanr.com/150811" target="_blank" rel="external"><img class="alignnone size-full wp-image-150835" title="url" src="http://www.ifanr.com/wp-content/themes/apple4us/images/grey.gif" alt="" width="600" height="375" original="http://cdn.ifanr.cn/wp-content/uploads/2012/09/url.jpeg"></a></p><p>不知你是否患上“应用选择困难症”，好看的应用不好用，好用的应用不好看。前者往往过于简单，后者往往过于复杂。</p><p>比如说 To-do 类应用，简单地新建一个待办事项都让人头大——后续的考虑往往太多。不但要判断这件事应该归于哪一类，还要判断优先级如何，甚至还可能要判断做完这件事要多长时间。等问完这些问题，时间可能已经过去 15 分钟。到底应用是帮人节约时间还是浪费时间？ <a href="http://www.ifanr.com/150811#more-150811" class="more-link">全文 » </a></p>
+CONTENT:
+<p></p><p>Release day!</p>
+<p>Qt 5, the evolutionary next step for Qt, reached Beta status today. It’s ready now for your testing and feedback.</p>
+<p><a href="http://labs.qt.nokia.com/2012/08/30/qt-5-beta-is-here/">Lars’ post over on Qt Labs</a> has everything you need to know. Congratulations to everyone who contributed to this release.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/TheQtBlog?a=j3M1K5PSyw4:LrhZ6cucN2k:3QFJfmc7Om4"><img border="0" src="http://feeds.feedburner.com/~ff/TheQtBlog?i=j3M1K5PSyw4:LrhZ6cucN2k:3QFJfmc7Om4"></a> <a href="http://feeds.feedburner.com/~ff/TheQtBlog?a=j3M1K5PSyw4:LrhZ6cucN2k:yIl2AUoC8zA"><img border="0" src="http://feeds.feedburner.com/~ff/TheQtBlog?d=yIl2AUoC8zA"></a> <a href="http://feeds.feedburner.com/~ff/TheQtBlog?a=j3M1K5PSyw4:LrhZ6cucN2k:D7DqB2pKExk"><img border="0" src="http://feeds.feedburner.com/~ff/TheQtBlog?i=j3M1K5PSyw4:LrhZ6cucN2k:D7DqB2pKExk"></a> <a href="http://feeds.feedburner.com/~ff/TheQtBlog?a=j3M1K5PSyw4:LrhZ6cucN2k:F7zBnMyn0Lo"><img border="0" src="http://feeds.feedburner.com/~ff/TheQtBlog?i=j3M1K5PSyw4:LrhZ6cucN2k:F7zBnMyn0Lo"></a> <a href="http://feeds.feedburner.com/~ff/TheQtBlog?a=j3M1K5PSyw4:LrhZ6cucN2k:V_sGLiPBpWU"><img border="0" src="http://feeds.feedburner.com/~ff/TheQtBlog?i=j3M1K5PSyw4:LrhZ6cucN2k:V_sGLiPBpWU"></a> <a href="http://feeds.feedburner.com/~ff/TheQtBlog?a=j3M1K5PSyw4:LrhZ6cucN2k:qj6IDK7rITs"><img border="0" src="http://feeds.feedburner.com/~ff/TheQtBlog?d=qj6IDK7rITs"></a> <a href="http://feeds.feedburner.com/~ff/TheQtBlog?a=j3M1K5PSyw4:LrhZ6cucN2k:gIN9vFwOqvQ"><img border="0" src="http://feeds.feedburner.com/~ff/TheQtBlog?i=j3M1K5PSyw4:LrhZ6cucN2k:gIN9vFwOqvQ"></a>
+</div><img height="1" src="http://feeds.feedburner.com/~r/TheQtBlog/~4/j3M1K5PSyw4" width="1">
+
+TITLE:The King in the North proclaims...
+
+SOURCE:Daniel Molkentin
+
+CONTENT:
+<p><a href="http://labs.qt.nokia.com/2012/08/30/qt-5-beta-is-here/"><img src="http://cdn.memegenerator.net/instances/400x/25875385.jpg"></a>
+</p>
+
+TITLE:Qt 5 Beta is here
+
+SOURCE:Qt Labs Blog
+
+CONTENT:
+<p></p><p>The <a href="http://www.qt-project.org/wiki/Qt-5-Beta">Qt 5 Beta</a> is now available as the first major release under the new Qt Project umbrella. A big thank you goes out to all who contributed to this milestone. With this Qt 5 beta release, I would also like to invite everybody interested to go, try, and experience this next major version of Qt. Your feedback now will be very important in making the final release of Qt 5.0 as good as possible.</p>
+<p>It’s now 15 months since we announced the start of Qt 5 development, and I am really happy to see what has been achieved during this time. All of the <a href="http://labs.qt.nokia.com/2011/05/09/thoughts-about-qt-5/">major architectural changes</a> that we planned for have been implemented. At the same time, the community around Qt and <a href="http://qt-project.org">qt-project.org</a> has seen a nice and healthy growth.</p>
+<p>Qt 5 will make it easier and faster to create:</p>
+<ul>
+<li>Smooth, accelerated graphics performance with limited resources. Qt 5 makes better use of the GPU to deliver better performance on inexpensive hardware. For example, using Qt 5 you can achieve 60 fps performance on a $35 single-board computer like Raspberry Pi. – See the <a href="http://qt-project.org/wiki/Qt-RaspberryPi">Qt on Pi</a> project for more info.
+</li>
+<li>Advanced UIs and applications written in QML and JavaScript. See the <a href="http://qt-project.org/wiki/QtMediaHub">Qt Media Hub</a> as an example
+</li>
+<li>Powerful apps connected to the web</li>
+</ul>
+<h2>High-performance Apps and UIs</h2>
+<p>Qt 5 addresses two core challenges developers face when creating high-performance apps and UIs: </p>
+<ol>
+<li>Better tools to design the UIs and </li>
+<li>Better rendering performance to execute your vision.</li>
+</ol>
+<p>The new extensions and APIs to the QML language make it easier to create rich and fluid apps and UIs for touch screen devices in addition to supporting keyboard input methods.  Qt 5′s updated WebKit and Qt Quick modules support out-of-the-box touch interaction for smooth user experiences. </p>
+<p>The new graphics stack sports an all-new rendering pipeline using an OpenGL based scene graph that is fully optimized for Qt Quick. This makes it trivial to integrate OpenGL-based content, such as shader effects or particles. Text rendering is also fully hardware accelerated, giving you faster graphics and lower power consumption. As a result, Qt 5 delivers the same 60 fps smoothness seen on high-end smartphones even when executed on inexpensive hardware like the Raspberry Pi. </p>
+<h2>Providing Source Compatibility and Continuity – Porting and QWidgets</h2>
+<p>A lot of effort has gone into making the transition of your code base and skill set from Qt 4 to Qt 5 as easy as possible and to keep as much source compatibility with Qt 4.x as we can. As an example we currently have Qt Creator compiling and running against Qt 4.x and Qt 5 using the same code base.</p>
+<p>You can find links to detailed porting instructions on the <a href="http://www.qt-project.org/wiki/Qt-5-Beta">Qt 5 beta</a> page or look at some examples of <a href="http://www.kdab.com/porting-from-qt-4-to-qt-5/">KDAB’s porting efforts</a>.</p>
+<p>Updating your code base is primarily a process of updating your projects’ .pro files, to change header file includes and add used modules. Qt 5 provides a script that facilitates this task. In addition, code that integrates with native windowing system functionality of the underlying platform will need some adjustments.</p>
+<p>While new UI designs benefit from the updated QML for mobile and embedded applications, it is also important to notice that existing widget-based designs remain viable. Widget-related APIs continue; QWidget and all derived classes are a core part of Qt 5 on the Desktop – and will remain so.</p>
+<h2>New APIs and modules</h2>
+<p>In addition to the changes to the internal architecture, a lot of new APIs have also found their way into Qt 5. Many new classes appeared in QtCore, providing support for JSON, mimetype recognition, standard paths and many other things.</p>
+<p>The OpenGL support is now an integral part of QtGui and has received some nice improvements. QWindow provides a better abstraction for top-level windows then the old QWidget.</p>
+<p>A couple of new modules have been added to the scope of Qt 5. In particular, the differentiation between Qt and Qt Mobility that existed in Qt 4.x has been removed. Instead we now have a more modular structure and each module (a shared library or QML import) is now classified as either being part of the Qt Essentials or an add-on. </p>
+<p>This new structure will make it easier in the future to integrate modules providing new functionality into the Qt Product offering, and allow for example KDE to provide their frameworks as add-ons to Qt.</p>
+<h2>Greater opportunity</h2>
+<p>In addition to delivering the best development environment possible, it is important that Qt increases your opportunity to get your projects in front of a bigger audience. </p>
+<p>With Qt 5, support for multiple operating systems continues. The QPA abstraction layer makes the task of porting to new platforms easier and more seamless then ever before. We are already seeing a lot of work going into Qt 5 to implement a full port to QNX and Blackberry 10. Digia has already announced their plans to port Qt 5 to Android and iOS. </p>
+<p>In addition, a lot of effort and contributions have gone into especially improving the use case for embedded developments on Linux. This helped the strong growth/up-take we witnessed within Qt for Automotive, IPTV/ STB and other IP comms manufacturers for current and next gen infotainment systems.<br>
+Discussions regarding what additional improvements Qt 5.1 will bring to the desktop use case and how quickly i.e. we can integrate <a href="http://labs.qt.nokia.com/2011/03/10/qml-components-for-desktop/">Qt desktop components</a> are ongoing and were also part of the sessions that ran during 3 days when close to 200 contributors attended the Qt Contributor Summit in Berlin during the end of June.</p>
+<h2>Known issues</h2>
+<p>While we are happy with the current state of the beta in most places, there are a few known issues that you might want to check out from our <a href="http://qt-project.org/wiki/Qt500beta1KnownIssues">Known-Issues page</a>. Most notably, you will need decent OpenGL drivers on Windows for Qt Quick to work, and there are issues remaining with Qt Multimedia on platforms other than Linux.</p>
+<p>We expect these issues to get resolved for the Qt 5.0 final, where we will by default use ANGLE to layer OpenGL on top of DirectX (the option to use the native OpenGL support on Windows remains of course) and work on the remaining Multimedia issues.</p>
+<h2>Summary</h2>
+<p>One thing that is becoming very visible now is how much the start of the Qt Project and move to Open Governance helped in improving Qt. Over the last year, we have managed to create a very active and passionate community of developers around Qt, and many of the improvements we are now seeing in Qt 5 would not have been possible without all this efforts. </p>
+<p>As an example, I’d like to mention all the improvements that flowed from the KDE libraries back into Qt 5. These will actually make it possible to have a more modular approach for KDE applications and fully remove the differentiation between a <a href="http://files.kde.org/akademy/2012/slides/KDE_Frameworks_5_for_Application_Developers_-_David_Faure.pdf">KDE and a Qt app</a></p>
+<p>I am very proud of what has been achieved with Qt 5. A big thank you goes to everybody who has in some way contributed to bringing Qt 5 to where it is now. Let’s also take a bit of time to celebrate all the hard work that has gone into this release, as the first major beta released under the new Qt Project umbrella.</p>
+<p>Lars Knoll</p>
+
+TITLE:Merged Proxy Model
+
+SOURCE:Rafał Malinowski
+
+CONTENT:
+<p>Kadu IM blog is now part of Qt Planet. This is good time to start sharing some of our solutions with community.<br><br><b>Merged&nbsp;Proxy&nbsp;Model</b><b></b><br><b><br></b>This is the thing I'm most proud of - a model that can merge any number of other models into one. In Kadu we use it in for: <br></p><ul><li>display actions above/below items in <span style="font-family: 'Courier New', Courier, monospace;">QComboBox</span> widgdets</li><li>display list of <span style="font-family: 'Courier New', Courier, monospace;">Chat</span> and <span style="font-family: 'Courier New', Courier, monospace;">Buddy</span> objects in our roster widget</li></ul><div>The second usage forces us to use a complicated structure or models and proxy model, as we have one <span style="font-family: 'Courier New', Courier, monospace;">Chat</span> instance for every <span style="font-family: 'Courier New', Courier, monospace;">Buddy</span>&nbsp;in addition to other instances. So before merging these models we apply filter proxy models that removes one-buddy chats from it. Then we apply more filtering/sorting proxy models on merged model just to be nice for our users.<br></div><br><div><div><b>Features</b></div><div><b><br></b></div><div>This proxy model not support everything - for example we haven't tested how it works with multiple columns or submodels with different number of columns. It also does not allows to plug in a model under a subnode of other model - all models are on top level.</div><div><br></div><div>It supports following features:</div><div><ul><li>updating list of submodels on demand</li><li>inserting and removing rows (no support for moving)</li><li>emiting all row and data based signals properly</li><li>proper mapping to source and from source indexes</li><li>copying mime daya from submodels</li></ul></div><div>So it is pretty usefull already.</div><div><br></div><div><b>Implementation</b></div><div><br class="Apple-interchange-newline">I must say that is was very hard piece of work.&nbsp;<span style="font-family: 'Courier New', Courier, monospace;">MergedProxyModel</span>&nbsp;has about 450 lines of code and we have&nbsp;<span style="font-family: 'Courier New', Courier, monospace;">KaduMergedProxyModel</span>&nbsp;on top of it (to implement reverse mapping from values to multiple indexes).</div><div><br></div><div>Two basic concepts are used: boundaries list that stores begin and end row index of all submodels in merged model. This value is updated every time a row is inserted or removed. Second one is mapping that maps <span style="font-family: 'Courier New', Courier, monospace;">QModelIndex</span> instances from source to proxy model.</div><div><br></div><div><b>Code</b></div><div><br></div><div>If you want more details or the code please look at our git repository:&nbsp;<a href="https://gitorious.org/kadu/kadu">Kadu on Gitorious</a>. This file is most important:&nbsp;<a href="https://gitorious.org/kadu/kadu/blobs/master/kadu-core/model/merged-proxy-model.h">merged-proxy-model.h</a>. Feel free to download and change it. And please send us any update that will make this code better.</div></div><div class="blogger-post-footer"><img alt="" height="1" src="https://blogger.googleusercontent.com/tracker/7595920238142263865-7664829055920343568?l=blog.kadu.im" width="1"></div>
+
+TITLE:Deploying shaders for view transitions on Qt5 / QtQuick 2.0
+
+SOURCE:Zchydem's Blog » Qt
+
+CONTENT:
+<p>I’ve been playing with QML quite a long time, even though it’s a young technology. I bet, I’m not the only one who has noticed that when building an application with QML, you may end up having a bunch of views and then you should figure you a way to navigate between them. You can [...]
+</p>
+
+TITLE:Qt Mac Tips
+
+SOURCE:Lateral Opinion (qt)
+
+CONTENT:
+<p>My team has been working on porting some PyQt stuff to Mac OSX, and we have run
+into several Qt bugs, sadly. Here are two, and the workarounds we found.</p>
+<p><strong>Native dialogs are broken.</strong></p>
+<p>Using <a class="reference external" href="http://qt-project.org/doc/qt-4.8/qfiledialog.html#getExistingDirectory">QFileDialog.getExistingDirectory</a>
+we noticed the following symptoms:</p>
+<ul class="simple"><li>If you do nothing, the dialog went away on its own after about 20 seconds.</li>
+<li>After you used it once, it may pop up and disappear immediately. Or not.</li>
+</ul><p>Solution: use the <a class="reference external" href="http://qt-project.org/doc/qt-4.8/qfiledialog.html#Option-enum">DontUseNativeDialog option.</a></p>
+<p><strong>Widgets in QTreeWidgetItems don't scroll.</strong></p>
+<p>When you use Widgets inside the items of a QTreeWidget (which I know, is not a common case, but
+hey, it happens), the widgets don't scroll with the items.</p>
+<p>Solution: use the <tt class="docutils literal"><span class="pre">-graphicssystem</span> raster</tt> options. You can even inject them into
+<tt class="docutils literal">argv</tt> if the platform is <tt class="docutils literal">darwin</tt>.</p>
+<p><a href="http://feedads.g.doubleclick.net/~a/y5c7uGIyuOKgJ8E0QfzxRJz8OoA/0/da"><img border="0" ismap="true" src="http://feedads.g.doubleclick.net/~a/y5c7uGIyuOKgJ8E0QfzxRJz8OoA/0/di"></a><br>
+<a href="http://feedads.g.doubleclick.net/~a/y5c7uGIyuOKgJ8E0QfzxRJz8OoA/1/da"><img border="0" ismap="true" src="http://feedads.g.doubleclick.net/~a/y5c7uGIyuOKgJ8E0QfzxRJz8OoA/1/di"></a></p><img height="1" src="http://feeds.feedburner.com/~r/PostsInLateralOpinionAboutQt/~4/nSaKlxWo254" width="1">
+
+TITLE:Qt Commercial Support Weekly #25 – Printing large tables
+
+SOURCE:Digia's Qt Commercial Blog
+
+CONTENT:
+<p>Have you ever had problems printing a large table? Every now and then support is approached with questions on how to achieve this. The problem comes when one has a QTableView and it’s larger than what is shown on the screen. Using grabWidget()...
+</p>
+
+TITLE:I’m looking for a new Job!
+
+SOURCE:Zchydem's Blog » Qt
+
+CONTENT:
+<p>Things ain’t go always like you plan and therefore I’m starting to look for a new job. If you have read my blog, I’m pretty sure that you know I like Qt. So here’s my wish list what I’d like to do and what I’ve done: I like to use Qt and Linux / Mac [...]
+</p>
+
+TITLE:Render Thread Animations in Qt Quick 2.0
+
+SOURCE:Qt Labs Blog
+
+CONTENT:
+<p></p><p>One of the shortcomings of the Qt Quick API is that despite having a dedicated rendering thread, our animations are always running on the GUI thread.</p>
+<p>Running animations outside the application’s main thread has the advantage that it greatly reduces jerkyness as operations that block the main thread will not hinder the animations from running. </p>
+<p>There are three primary problems hindering us:</p>
+<ul>
+<li>Animations update properties and these are tied to QObjects and the meta object system. To avoid threading insanity, we can only read and write these on the GUI thread.
+</li><li>Properties often have bindings in QML, which trigger JavaScript execution which must happen on the GUI thread.
+</li><li>The threaded render loop in the QtQuick library is driven by the GUI thread and does not redraw unless told, so if the GUI is blocked, nothing updates.
+</li></ul>
+<p>As I mentioned in my previous post, the render loop in the “customcontext” in <a href="https://codereview.qt-project.org/#admin,project,playground/scenegraph,info">ssh://codereview.qt-project.org:29418/playground/scenegraph.git</a> fixes the third problem, but that leaves the issue of access to QObjects and JavaScript execution.</p>
+<p>A colleague of mine, Marko Niemelä, has been working on an animation system that solves the QObject / QML binding part. His work is in the “animators” directory of the playground repository.</p>
+<p>This is not Qt 5.0 material, but maybe we can get it in good shape for 5.1. </p>
+<p>Enjoy!</p>
+<p></p>
+
+TITLE:Raspberry Pi
+
+SOURCE:Life of a Developer » Qt
+
+CONTENT:
+<p>I’ve got a Raspberry Pi since a while back. I placed an order <a href="http://www.edmondscommerce.co.uk/ecommerce/how-10000-geeks-break-the-uks-biggest-distributors-rs-and-farnell-raspberry-pi/">the morning</a>&nbsp;the Pi was released. However, I also have a newborn and a four years old, so progress on the Pi has been slow. Now, finally, I have a setup that I’m pleased with.</p>
+<p>I use my Nokia N900 charger, a non-name powered USB HUB, and a d-link DWA-131 wifi USB dongle. This page is a <a href="http://elinux.org/RPi_VerifiedPeripherals">great resource for selecting periphials</a>. The only draw-back right now is that the HUB and Pi draw power using separate supplies. Sharing a single 5V feed would reduce the need to free wall sockets from two to one :-)</p>
+<p>For casing, I use a self-printed <a href="http://www.thingiverse.com/thing:24945">Raspberry Pi case with GPIO-access</a>. However, I’ve not had time to fiddle around with the GPIOs just yet. The case fits nicely onto my noname USB HUB, so I’ve joined the two using a piece of velcro. The look is not very stylish, but the packaging is nice.</p>
+<p>For software, I use the Raspbian image featuring debian built for armv6 with hard-float. I also use the qt50-snapshot from <a href="http://qt-project.org/wiki/RaspberryPi">here</a> (look under nightlies). That image is missing qmlscene and qmake, so for development, I guess I have to setup a cross compiler, or spend 4-5 days compilation time building a Qt 5 snapshot on the Pi myself. Not having qmake is sort of ok – compilation times are bound to be long, but qmlscene would had been nice, to be able to do local QML development.</p>
+<p>I’ve had Qt 5 working from a snapshot for Debian wheezy with softfloat which had qmlscene pre-built. The framerate is nice, so it felt as if there was true potential there. I’m looking forward to being able to build my own little C++ QML extension and try it out for real.</p>
+<p>Pics, code and more info will follow.</p>
+
+TITLE:KRunner Dictionary Plugin: Complete
+
+SOURCE:Nerdling Sapple » Qt
+
+CONTENT:
+<p>Over two years ago, I announced that I had <a href="http://blog.zx2c4.com/285">written a dictionary plugin for KRunner</a>. Many expected it would be merged immediately, but there was an unfortunate hiccup. Because of the particulars of KRunner’s threading, and the fact that the dictionary data engine needed to only be accessed from the main thread, Aaron Seigo said that he would add an AbstractRunner property called <tt>setReentrant</tt> that would allow for easily accessing data engines from the KRunner’s match thread. This never materialized. I waited, and nothing ever came, and eventually I just presumed the plasma developers weren’t interested in adding this API themselves.</p>
+<p>Not a problem, though. Now, two years since, I’ve decided to resurrect the runner, and rewrite it using mutexes to work around the API’s threading limitations. The result turned out very cleanly, and so far in my testing it works without fail.</p>
+<p><img alt="" class="aligncenter size-full wp-image-809" height="369" src="http://blog.zx2c4.com/wp-content/uploads/2012/08/krunner-modernized-dictionary-runner.png" title="KRunner has been brought up to speed." width="606"></p>
+<p>It’s currently in kde-review, but I’m hoping to move it into plasma-addons and ship it with 4.10, now that it works well.</p>
+<p>For the eager, you can try it out now with these commands:</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash" style="font-family: monospace;"><span style="color: #c20cb9; font-weight: bold;">svn</span> <span style="color: #c20cb9; font-weight: bold;">co</span> <span style="color: #c20cb9; font-weight: bold;">svn</span>:<span style="color: #000000; font-weight: bold;">//</span>anonsvn.kde.org<span style="color: #000000; font-weight: bold;">/</span>home<span style="color: #000000; font-weight: bold;">/</span>kde<span style="color: #000000; font-weight: bold;">/</span>trunk<span style="color: #000000; font-weight: bold;">/</span>kdereview<span style="color: #000000; font-weight: bold;">/</span>plasma<span style="color: #000000; font-weight: bold;">/</span>runners<span style="color: #000000; font-weight: bold;">/</span>dictionary dictionary-krunner
+<span style="color: #7a0874; font-weight: bold;">cd</span> dictionary-krunner
+cmake . -DCMAKE_INSTALL_PREFIX=$<span style="color: #7a0874; font-weight: bold;">(</span>kde4-config --prefix<span style="color: #7a0874; font-weight: bold;">)</span>
+<span style="color: #c20cb9; font-weight: bold;">make</span>
+<span style="color: #c20cb9; font-weight: bold;">sudo</span> <span style="color: #c20cb9; font-weight: bold;">make</span> <span style="color: #c20cb9; font-weight: bold;">install</span>
+kbuildsycoca4
+kquitapp krunner
+krunner</pre></div></div>
+
+<div class="tantan-getcomments"><a href="http://blog.zx2c4.com/808#comments"><img src="http://blog.zx2c4.com/wp-content/plugins/tantan/get-comments.php?p=808" style="border: 0;"></a></div><div class="bottomcontainerBox">
+			<div style="float: left; width: 85px; padding-right: 10px; margin: 4px 4px 4px 4px; height: 30px;">
+			</div>
+			<div style="float: left; width: 85px; padding-right: 10px; margin: 4px 4px 4px 4px; height: 30px;">
+			
+			</div>
+			<div style="float: left; width: 85px; padding-right: 10px; margin: 4px 4px 4px 4px; height: 30px;">
+			<a class="twitter-share-button" href="http://twitter.com/share"></a>
+			</div>			
+			<div style="float: left; width: 85px; padding-right: 10px; margin: 4px 4px 4px 4px; height: 30px;"></div>			
+			</div><div style="clear: both;"></div><div style="padding-bottom: 4px;"></div>
+
+TITLE:Checkers as she is wrote
+
+SOURCE:Incorrigible Imaginings » Qt - Incorrigible Imaginings
+
+CONTENT:
+<p>It’ll come as no surprise to anyone that I like writing QML games, my gitorious account is littered with the prototypes I’ve thrown up in a few hours for fun. I’ve done another one which has proved to be extra-large: about a full working day’s effort scattered across a couple of nights. <a href="https://gitorious.org/aalperts-microgames/checkers" title="QML Checkers Repo">https://gitorious.org/aalperts-microgames/checkers</a> has a QML checkers prototype, with Human-on-Human and VS AI modes. It was fun and educational, which is good because checkers isn’t a very interesting game otherwise <img alt=";)" class="wp-smiley" src="http://alan.imagin-itis.net/wp-includes/images/smilies/icon_wink.gif">  .</p>
+<p><span id="more-332"></span></p>
+<p>So what did I learn from the educational experience? Mostly, I tried doing some of the things that I keep recommending to QML developers but don’t apply to developing QML. So I built this using my system Qt Creator and Qt instead of in the magical Qt 5 land, because Qt 5 isn’t released yet so I don’t recommend it to the average developer (yet!). The next point is that I’ve always said to put serious chunks of logic into C++, not JS. My game logic may be frequently in JS, but that’s because it’s so trivially simple (you try writing checkers!). For comparison, the AI that uses classic minimax with α/β pruning is really going to be grinding the CPU for all it can. So the AI goes into C++, and still integrates easily with the QML. This at least serves as an example, albeit an pretty obvious one, of where the line can be drawn for C++ logic versus JS logic.</p>
+<p>I also placed the AI inside a separate thread. I’ve been telling people to put long operations in a separate thread for such a long time that it deserves a separate thread <img alt=":P" class="wp-smiley" src="http://alan.imagin-itis.net/wp-includes/images/smilies/icon_razz.gif">  . It’s the easiest way to get a responsive UI, and spinning the event loop manually tends to lead to trouble (especially with QML). I always thought it was easy, but this really was as easy as I thought. Placing the AI safely into a thread means hooking up signals and slots (necessary for making it asynchronous, not actually about multi-threading) and making a trivial QThread subclass. Throw in a QMutex and some QMutexLockers for flavor, and it’s done. With my theory vindicated, I will be even more eager to proselytize multi-threaded data-processing from now on.</p>
+<p><img alt="QML Checkers - Humans are Red" src="http://alan.imagin-itis.net/wp-content/uploads/2012/08/checkers2.png"></p>
+<p>So what made checkers interesting enough for me to give it a try? One reason is the simplicity of the UI; I haven’t tried a classical board game yet. This applies to both chess and checkers really, but chess is more complicated due to having multiple piece types. The rest of my games tend to send mouse clicks to a backend logic function for processing, in this UI I could actually leave the MouseAreas on GamePieces and control it all in the style of delegates. This allowed for an easy to implement drag and drop that was quite natural for the board game metaphor. The other aspect dictated by the board-game UI metaphor was the fluid motion of all the pieces, again quite easy with QML. While the user drops their own pieces, I just placed behaviors on the GamePiece for the AI moves. This led to the interesting need to artificially slow the AI, so that it didn’t over take the animation. In the case where multiple captures in a row are possible, I currently have the game wait for the animation duration before asking the AI for the next move. The other interesting thing is that I stopped using the positioners for the stacks of captured pieces because they feel so far behind in QtQuick 1. It’s the weird opacity/visible behavior and I was trying to use the positioner animations, both of those aspects have been improved in QtQuick 2 (and since QtQuick 2 is recent, that’s the behavior I tried to use).</p>
+<p>There is one UI embellishment that I had in mind from the beginning. I always thought that the most valuable addition a computer version of checkers could give would be to highlight your available moves. Got a forced capture? It won’t be hard to find when there’s only one tile blinking right in front of you. This lead to a funny little logic design that worked out well. Instead of evaluating each move for legality and effect when the user attempts to move somewhere, all valid moves are computed and stored every turn. This makes the actual move part just picking an entry from a list and acting it out. The differing performance characteristics aren’t a problem here, I just found it interesting the odd data storage I had. Instead of the conventional board array, there’s just lists of pieces and valid moves – I almost felt like I was using LISP again! The programmer time characteristics were also a bit unusual, a bit longer to implement the basic game and then the ‘advanced’ feature of highlighting was a snap. Definitely a parable of the benefits (and costs) of designing the system before you start writing <img alt=";)" class="wp-smiley" src="http://alan.imagin-itis.net/wp-includes/images/smilies/icon_wink.gif">  .</p>
+<p>So there’s another random game implemented in a snap with QML. Now once Digia gets QtQuick 2 running on all mobile platforms, I’ll grind out a game a week and flood the markets <img alt=":D" class="wp-smiley" src="http://alan.imagin-itis.net/wp-includes/images/smilies/icon_biggrin.gif"> !</p>
+<p>An interesting coincidence, and the explanation for the poor title, Dinosaur Comics also <a href="http://www.qwantz.com/index.php?comic=2267">did checkers</a> this week. I almost restyled my checkers application to have a lava aesthetic, animated sprites of people who jump and kick, and a cheesy bubbling lava sound track (most of the assets I’d need are on <a href="http://opengameart.org/art-search?keys=lava">opengameart.org</a>). What stopped me? I thought of just how easy it would be to do all that in Qt 5 – and remembered I had written this one in Qt 4 <img alt=":(" class="wp-smiley" src="http://alan.imagin-itis.net/wp-includes/images/smilies/icon_sad.gif">  . Remind me when Qt 5 is released and perhaps I’ll port it with the new theme. Until then I just don’t think it’s worth doing it without the fireball particles spewing randomly across the screen. In the meantime, the new maroon demo in Qt 5 already demonstrates how to use animated sprites, sound effects, and particle systems in an (underwater themed) game.</p>
+
+TITLE:Qt5 Cinematic Experience
+
+SOURCE:Kaitsu
+
+CONTENT:
+<p><br>During the past ~20 months I've made several blog posts about Qt5, QML Scene Graph, shaders and whatnot. As Qt5 beta is getting reeeeally close, I thought this would be a good time for a fresh Qt5 technology demo. This one is called 'Cinematic Experience' and looks a bit like this:<br><br>         <br></p><center>(best viewed <a href="http://www.youtube.com/watch_popup?v=kBNelaiCJZg&amp;vq=hd1080">in HD</a>)</center><br>Cinematic Experience collects many of the new Qt5 QtQuick 2.0 features into the same UX demo application. It uses particles, sprites, path animation, custom shaders etc. features which Qt5 introduces for QML UIs. As usual, source codes are available <a href="http://quitcoding.com/?page=work#cinex">from here</a>.<br><br><b>Performance note:</b> The GPU in N9 (SGX530, released Jul 2005) is showing its age. Especially fragment shaders need to be very conservative as the GPU just isn't powerful enough for the N9 screen resolution. To get the application perform in N9, some optimizations were required like disabling the normal-mapping lighting and reducing the amount of fog particles. As seen in the video, after these tweakings N9 can run the demo okeyish. Definitely far from velvet, but I would say it's more like butter ;P<br><br><b>PS.</b> In case you own RPi, Beagleboard, Pandaboard, Snowball or any other embedded hardware running Qt5, please grab the demo and give it a go. I'm waiting for feedback and videos!<div class="blogger-post-footer"><img alt="" height="1" src="https://blogger.googleusercontent.com/tracker/5674163510758480535-8693791878565322102?l=kgronholm.blogspot.com" width="1"></div>
+
+TITLE:QCoreApplication mini benchmark
+
+SOURCE:Qt Labs Blog
+
+CONTENT:
+<p></p><p>For robustness and security reasons, it often makes sense to split functionality into various smaller binaries (daemons) rather than having a few big and monolithic applications.</p>
+<p>Qt 4 introduced modularized Qt libraries in order to enable Qt based daemons that don’t require any GUI. Thanks to the strong embedded focus and several sane architecture decisions, Qt 5 brings this to a new level.</p>
+<p>Let’s look at some simple main function:<br>
+<code><br>
+QCoreApplication app(argc, argv);<br>
+QTimer::singleShot(3000, &amp;app, SLOT(quit()));<br>
+return app.exec();<br>
+</code></p>
+<p>This non-gui Qt app idles for about 3 seconds, then quits.</p>
+<p>On my vanilla i386 Kubuntu 12.04 with Qt 4.8.1, <a href="http://valgrind.org" target="_blank">valgrind’s</a> massif tool reports a peak heap memory usage of around 102 kb, while callgrind reports an instruction cost of about 1.9 million (*).</p>
+<p>Let’s have a look at the numbers from today’s build of Qt 5: Massif reports a peak heap of 4.9 kb and callgrind reports an instruction cost of about 114k.</p>
+<p>This means that Qt 5 uses about 20 times less memory and about 16 times less instructions to construct a QCoreApplication and spin an event loop.</p>
+<p>There are several reasons for that. Most notably, Qt 5 assumes that all strings are unicode, so the initialization of text conversion codecs only happens when the first non-unicode string comes along. Even though Qt 5 has vastly improved plugin loading performance, not loading them is even faster <img alt=":)" class="wp-smiley" src="http://labs.qt.nokia.com/wp-includes/images/smilies/icon_smile.gif"> </p>
+<p>Various other improvements also add up, e.g. the C++11 support in Qt 5 means that we require no allocation to create unicode QString objects and moving objects around also got cheaper.</p>
+<p>In summary, have fun writing Qt 5 based daemons, and if you have any idea how to make the code even more performant, we’ll see you at <a href="https://codereview.qt-project.org/" target="_blank">Qt’s codereview</a> <img alt=":)" class="wp-smiley" src="http://labs.qt.nokia.com/wp-includes/images/smilies/icon_smile.gif"> </p>
+<p>(*) Disclaimer: The instruction cost does not show how fast the code is, but how many instructions were processed by the CPU. Note that in all cases I only measured the performance of main(), ignoring the overhead of the OS’s symbol and library resolving, as that can be optimized with prelinking or forking from a master process.</p>
+
+TITLE:Qt Creator 2.5.2 released
+
+SOURCE:Digia's Qt Commercial Blog
+
+CONTENT:
+<p>I am happy to announce that the Qt Creator 2.5.2 is now available for download from the Customer Portal , as well as an online update for Qt Commercial SDK users. The Qt Creator 2.5.2 is a bugfix release which mends some of the more serious issues...
+</p>
+
+TITLE:QML Engine Internals, Part 2: Bindings
+
+SOURCE:» KDAB on Qt
+
+CONTENT:
+<p>This blog post is part of an <a href="http://www.kdab.com/category/blogs/qmlengineseries/" title="ongoing series">ongoing series</a> about the internals of the QML engine.</p>
+<p>In the last blog post, we covered <a href="http://www.kdab.com/qml-engine-internals-part-1-qml-file-loading/">how the QML engine loads QML files</a>. To recap, QML files are parsed and then C++ objects are created for all elements in the QML file. For example, we saw that when the QML file contains a <em>Text</em> element, the engine creates an instance of the C++ <em>QQuickText</em> class.</p>
+<p>Loading files is actually pretty much all the QML engine does. After that, it does not get involved much anymore at runtime. Things like event handling and painting are done in the C++ classes. For example, a <em>TextInput</em> element does input event handling in e.g. <a href="http://qt.gitorious.org/qt/qtdeclarative/blobs/master/src/quick/items/qquicktextinput.cpp#line1423">QQuickTextInput::keyPressEvent()</a> and painting in <a href="http://qt.gitorious.org/qt/qtdeclarative/blobs/master/src/quick/items/qquicktextinput.cpp#line1752">QQuickTextInput::updatePaintNode()</a>, no QML engine involved at all.</p>
+<p>There are two important things in which the QML engine is still involved at runtime:<strong> Bound signal handlers</strong> and <strong>property binding</strong> updates. Bound signal handlers are things like an <em>onClicked</em> handler for a <em>MouseArea.</em> What we will look into in this post are bindings. Consider the following example:</p>
+<pre>import QtQuick 2.0<br><br>Rectangle {<br>  width: 300<br>  height: 300<br>  color: "lightsteelblue"<br>  Text {<br>    anchors.centerIn: parent<br>    text: "Window Area: " + (parent.width * parent.height)<br>  }<br>} </pre>
+<p>The example contains two kinds of assignments to properties:</p>
+<ol>
+<li>Simple <strong>value assignments</strong>, like assigning <em>300</em> to the <em>width</em> property of <em>QQuickRectangle</em>. In this case that would be the VME instruction <em>STORE_DOUBLE</em>, which is executed when the component is created. The VME simply calls <em>QMetaObject::metacall(QMetaObject::WriteProperty, …)</em>, which will end up in <em>QQuickRectangle::setWidth()</em>. After the initial assignment, the QML engine doesn’t touch the <em>width</em> property anymore.</li>
+<li><strong>Binding assignments</strong>, like assigning the binding <em>“Window Area: ” + (parent.width * parent.height)</em> to the <em>text</em> property or assigning the binding <em>parent</em> to the <em>centerIn</em> property. Thanks to the magic of bindings, the <em>text</em> property is automatically updated whenever the <em>width</em> property or the <em>height</em> property of the rectangle change. How does that work? Actually no magic involved, read on to find out.</li>
+</ol>
+<h1>Creating the Binding</h1>
+<p>Looking at the VME instructions with <em>QML_COMPILER_DUMP=1</em>, we see that both bindings are created with the <em>STORE_COMPILED_BINDING</em> instruction:</p>
+<pre>...
+9               STORE_COMPILED_BINDING  43      1       0
+10              FETCH                   19
+11              STORE_COMPILED_BINDING  17      0       1
+...
+</pre>
+<p>Compiled bindings are an optimization, we’ll first look into normal bindings, which are created with the <em>STORE_BINDING</em> instruction. Looking into the code in <a href="http://qt.gitorious.org/qt/qtdeclarative/blobs/master/src/qml/qml/qqmlvme.cpp#line804">QQmlVME::run()</a>, we see that the code creates a <a href="http://qt.gitorious.org/qt/qtdeclarative/blobs/master/src/qml/qml/qqmlbinding_p.h#line74">QQmlBinding</a> object that gets the string<br>&nbsp; <em>“function $text() { return “Window Area: ” + (parent.width * parent.height) }”</em><br>as its expression. That’s right, <strong>each binding is a JavaScript function</strong>! The <em>“function $text()”</em> part was added by the QML compiler, since <a href="http://code.google.com/p/v8/">v8</a>, the JavaScript engine used in QML, can only evaluate complete functions. The function string is then compiled to a <em>v8::Function</em> object by the v8 compiler. The v8 engine produces native machine code, as it has a <a href="http://en.wikipedia.org/wiki/Just-in-time_compilation">Just-in-Time (JIT) compiler</a>. The <em>v8::Function</em> object is not executed yet, but kept around.</p>
+<p>To sum up what happens when a binding is created with the <em>STORE_BINDING</em> instruction: A <em>QQmlBinding</em> object is created, which compiles a <em>v8::Function</em> from the function string it gets passed.</p>
+<h1>Running the Binding</h1>
+<p>At some point, the binding needs to be <em>run</em>, which means letting the v8 engine evaluate the binding function and writing the result of that to the target property. This is done at the very end of the creation phase, <a href="http://qt.gitorious.org/qt/qtdeclarative/blobs/master/src/qml/qml/qqmlvme.cpp#line1263">QQmlVME::complete()</a> calls an <em>update()</em> function for each binding, in our case <a href="http://qt.gitorious.org/qt/qtdeclarative/blobs/master/src/qml/qml/qqmlbinding.cpp#line246">QQmlBinding::update()</a>. <em>update()</em> simply executes the <em>v8::Function</em> object and writes the return value to the target property, which in our case is the <em>text</em> property of the rectangle.</p>
+<p>But wait, how does v8 know the values of <em>parent.width</em> and <em>parent.height</em>? Actually, how does it know about the <em>parent</em> object at all? The answer to that is: It doesn’t, the v8 engine has no clue about which QObjects exists under which name in the QML file, and what its properties are. When the v8 engine encounters an unknown object or an unknown property, it asks an <strong>object</strong> <strong>wrapper </strong>in the QML engine, and the wrapper finds the correct object or property and hands it back to the v8 engine. Let’s see how the <em>width</em> property of <em>QQuickItem</em> is accessed by looking at a backtrace:</p>
+<pre>#0  QQuickItem::width (this=0x6d8580) at items/qquickitem.cpp:4711
+#1  0x00007ffff78e592d in QQuickItem::qt_metacall (this=0x6d8580, _c=QMetaObject::ReadProperty, _id=8, _a=0x7fffffffc270) at .moc/debug-shared/moc_qquickitem.cpp:675
+#2  0x00007ffff7a61689 in QQuickRectangle::qt_metacall (this=0x6d8580, _c=QMetaObject::ReadProperty, _id=9, _a=0x7fffffffc270) at .moc/debug-shared/moc_qquickrectangle_p.cpp:526
+#3  0x00007ffff7406dc3 in ReadAccessor::Direct (object=0x6d8580, property=..., output=0x7fffffffc2c8, n=0x0) at qml/v8/qv8qobjectwrapper.cpp:243
+#4  0x00007ffff7406330 in GenericValueGetter (info=...) at qml/v8/qv8qobjectwrapper.cpp:296
+#5  0x00007ffff49bf16a in v8::internal::JSObject::GetPropertyWithCallback (this=0x363c64f4ccb1, receiver=0x363c64f4ccb1, structure=0x1311a45651a9, name=0x3c3c6811b7f9) at ../3rdparty/v8/src/objects.cc:198
+#6  0x00007ffff49c11c3 in v8::internal::Object::GetProperty (this=0x363c64f4ccb1, receiver=0x363c64f4ccb1, result=0x7fffffffc570, name=0x3c3c6811b7f9, attributes=0x7fffffffc5e8)
+    at ../3rdparty/v8/src/objects.cc:627
+#7  0x00007ffff495c0f1 in v8::internal::LoadIC::Load (this=0x7fffffffc660, state=v8::internal::UNINITIALIZED, object=..., name=...) at ../3rdparty/v8/src/ic.cc:933
+#8  0x00007ffff4960ff5 in v8::internal::LoadIC_Miss (args=..., isolate=0x603070) at ../3rdparty/v8/src/ic.cc:2001
+#9  0x000034b88ae0618e in ?? ()
+...
+[more ?? frames from the JIT'ed v8::Function code]
+...
+#1  0x00007ffff481c3ef in v8::Function::Call (this=0x694fe0, recv=..., argc=0, argv=0x0) at ../3rdparty/v8/src/api.cc:3709
+#2  0x00007ffff7379afd in QQmlJavaScriptExpression::evaluate (this=0x6d7430, context=0x6d8440, function=..., isUndefined=0x7fffffffcd23) at qml/qqmljavascriptexpression.cpp:171
+#3  0x00007ffff72b7b85 in QQmlBinding::update (this=0x6d7410, flags=...) at qml/qqmlbinding.cpp:285
+#4  0x00007ffff72b8237 in QQmlBinding::setEnabled (this=0x6d7410, e=true, flags=...) at qml/qqmlbinding.cpp:389
+#5  0x00007ffff72b8173 in QQmlBinding::setEnabled (This=0x6d7448, e=true, f=...) at qml/qqmlbinding.cpp:370
+#6  0x00007ffff72c15fb in QQmlAbstractBinding::setEnabled (this=0x6d7448, e=true, f=...) a /../../qtbase/include/QtQml/5.0.0/QtQml/private/../../../../../../qtdeclarative/src/qml/qml/qqmlabstractbinding_p.h:98
+#7  0x00007ffff72dcb14 in QQmlVME::complete (this=0x698930, interrupt=...) at qml/qqmlvme.cpp:1292
+#8  0x00007ffff72c72ae in QQmlComponentPrivate::complete (enginePriv=0x650560, state=0x698930) at qml/qqmlcomponent.cpp:919
+#9  0x00007ffff72c739b in QQmlComponentPrivate::completeCreate (this=0x698890) at qml/qqmlcomponent.cpp:954
+#10 0x00007ffff72c734c in QQmlComponent::completeCreate (this=0x698750) at qml/qqmlcomponent.cpp:947
+#11 0x00007ffff72c6b2f in QQmlComponent::create (this=0x698750, context=0x68ea30) at qml/qqmlcomponent.cpp:781
+#12 0x00007ffff79d4dce in QQuickView::continueExecute (this=0x7fffffffd2f0) at items/qquickview.cpp:445
+#13 0x00007ffff79d3fca in QQuickViewPrivate::execute (this=0x64dc10) at items/qquickview.cpp:106
+#14 0x00007ffff79d4400 in QQuickView::setSource (this=0x7fffffffd2f0 at items/qquickview.cpp:243
+#15 0x0000000000400d70 in main ()
+</pre>
+<p>We can see that the wrapper is in <a href="http://qt.gitorious.org/qt/qtdeclarative/blobs/master/src/qml/qml/v8/qv8qobjectwrapper.cpp">qv8qobjectwrapper.cpp</a> and ends up calling <em>QObject::qt_metacall(QMetaObject::ReadProperty, …)</em> to get the property value. The wrapper was called from v8 code, which itself was called by generated machine code of our <em>v8::Function</em> object. The generated machine code doesn’t have stack frames, and therefore GDB is unable to show the backtrace after the ??. I cheated a bit and pieced together this backtrace from two separate backtraces, which explains the inconsistent frame numbering.</p>
+<p>So the v8 engine involves an <strong>object wrapper</strong> to get property values. In the same vein, it involves a <strong>context wrapper</strong> to find objects themselves, for example the <em>parent</em> object that is accessed during binding evaluation.</p>
+<p>To sum up: A binding is evaluated by running the compiled <em>v8::Function</em> code. The v8 engine access unknown objects and properties by calling out to <strong>wrappers</strong> in Qt. The result returned by the <em>v8::Function</em> is then written to the target property.</p>
+<h1>Updating the Binding</h1>
+<p>Ok, now we know how the <em>text</em> property got its initial value. But how do binding updates work? How does the QML engine know that it needs to re-run the binding when the <em>width</em> or <em>height</em> properties change?</p>
+<p>The answer to that question lies in the object wrapper, which, as you remember, is called from the v8 engine whenever it needs to access a property. The object wrapper does more than just returning property values: It <strong>captures </strong>all properties that are accessed. Essentially, when a property is accessed, the object wrapper calls the capture function of the binding that is currently run, which in our example is <a href="http://qt.gitorious.org/qt/qtdeclarative/blobs/master/src/qml/qml/qqmljavascriptexpression.cpp#line210">QQmlJavaScriptExpression::GuardCapture::captureProperty()</a><em> (QQmlBinding</em> is a subclass of <em>QQmlJavaScriptExpression</em>).</p>
+<p>In the capture function, the binding simply connects to the NOTIFY signal of the captured property. When the NOTIFY signal is emitted, a connected slot in the binding is called that re-runs the binding. If you haven’t heard about NOTIFY signals yet, no worries, it is quite simple: When a property is declared with Q_PROPERTY, it is possible to declare a NOTIFY signal there. This signal is emitted by the object whenever the property changes in any way.</p>
+<p>For example, the declaration for the <em>width</em> property in <em>QQuickItem</em> looks like this:<br>&nbsp;&nbsp; <em>Q_PROPERTY(qreal width READ width WRITE setWidth NOTIFY widthChanged)</em><br>In our scenario, when the <em>width</em> property is accessed while the binding is being run for the first time, the property capture code connects to the <em>widthChanged()</em> signal. Whenever <em>QQuickItem</em> later emits <em>widthChanged()</em>, the connected slot in the binding is called and the binding is re-evaluated.</p>
+<p>This is why it is important to have NOTIFY signals and to emit them whenever your property changes. If you forget to do so, the binding is not re-evaluated, and essentially the property binding doesn’t work correctly. On the other hand, if you emit a NOTIFY signal even though the property hasn’t really changed, the binding would be re-evaluated needlessly.</p>
+<p>To sum up: When accessing properties, the object wrapper calls a capture function from the binding, which connects to the NOTIFY signal of that property to be able to re-evaluate itself whenever the property changes.</p>
+<h1>Conclusion</h1>
+<p>In this blog post, we’ve looked at how bindings work. The very short summary is that each binding is a compiled JavaScript function that is executed whenever one of the referenced properties changes.</p>
+<p>I hope you enjoyed reading about this, I certainly found it very interesting to examine the guts of property bindings.</p>
+<p>In the next blog post of the series, we’ll have a look at the different binding types. Right now, we only looked at the most basic binding, <em>QQmlBinding</em>, but we know already that more binding types, like compiled bindings, exist. The mystery of those will get unraveled soon, stay tuned!</p>
+
+TITLE:QML Versioning
+
+SOURCE:Incorrigible Imaginings » Qt - Incorrigible Imaginings
+
+CONTENT:
+<p>QML (and QtQuick) versioning is not the same as Qt versioning. This is understandably confusing for some people, so let me take the long-form approach and describe the what, why and how of QML versioning. Note: This is the essay version. The technical version with code snippets is <a href="http://doc-snapshot.qt-project.org/5.0/qtqml-cppintegration-definetypes.html#type-revisions-and-versions" title="QML/C++ integration versioning docs">in the docs</a>  where it should be. As an essay version it’s mostly “why”, for better answers to “what” clone the repository and look at the examples. For better answers to how clone and read the source code for the engine; qqmlengine.cpp contains fewer lines than this blog post <img alt=";)" class="wp-smiley" src="http://alan.imagin-itis.net/wp-includes/images/smilies/icon_wink.gif">  .<br>
+<span id="more-322"></span></p>
+<h3>What is QML versioning?</h3>
+<p>QML modules register types into a versioned namespace. This means that when you provide types to QML, you also must specify which versions these types exist in. Then when you import a module, e.g. ‘import QtQuick 1.1′, you import the types for a specific version. By QML versioning I am referring to this versioning system in the QML language, where you need to assign types to a specific version when you declare or import them. The version of the language will hopefully remain an implementation detail, because it doesn’t change that much.</p>
+<h3>Why does QML have its own versioning? </h3>
+<p>Because it’s a new language. C++ manages versioning with the details of linking in the shared libraries, QML needs something similar. Yet it also has to be something a little less technical than the offset specified for a symbol resolution, or at least easier to explain to less technical users.</p>
+<p>What’s the problem versioning solves? The real problem that versioning solves is when you are using system libraries, and those system libraries get an update. If you aren’t using system libraries, then your app keeps working regardless because you chose which version to statically link or distribute. Even more specifically the problem refers to pre-existing software for the system. If you’re actively developing the software then you just need a bit of warning to recompile your app, and then let the package manager replace everything at once. So the main problem versioning solves, at least the one I was shown, is when you have a finished application left in the package manager or app store and moved on. The ecosystem would prefer not to throw your app away just because the system library changed – we’re assuming you left it because it’s perfect, done and verifiably bug-free (realistically, we’re assuming that some people still find it useful). Or maybe you moved on to develop another app or another version, and you just don’t want to drop everything to update your application in time for the system library update window. Another possibility is that subtle behavioural errors sneaked into the minor release and your application is so broken you need more time to make it work again. That last one we mitigate a little in reality but the theoretical framework says we fix that too <img alt=";)" class="wp-smiley" src="http://alan.imagin-itis.net/wp-includes/images/smilies/icon_wink.gif">  .</p>
+<p>With Qt when the Qt system libraries are updated the binary compatibility promises mean that you should be fine until the major version changes (which <em>will</em> break everything). The concern was, because this was around the time of the Nokia acquisition of Trolltech, that Symbian apps depending on Qt will want to use the system Qt instead of adding 10-20MB to every Qt application. Then if a Qt update is pushed out to devices, all applications needed to continue working; Symbian didn’t have enough apps to be able to afford losing any <img alt=":P" class="wp-smiley" src="http://alan.imagin-itis.net/wp-includes/images/smilies/icon_razz.gif">  . At the very least, we needed to provide the QML version of binary compatibility.</p>
+<p>The QML version of binary compatibility means to not interfere with symbol resolution. If you add new types or properties to a module, existing applications might be using those names already and a conflict ensues. In some cases this conflict leads to you using different types or properties and thus breaking existing behaviour. Unlike C++ symbols, QML as an interpreted language has much greater scope for confusion. Because of the object-oriented nature of C++, the most likely scenario I can think of is that if Qt added a new class and you didn’t compile Qt in a namespace then you might get a compile error when you redefine a class with the same name (hint: don’t start your classes with ‘Q’). In most cases it’ll still run fine, because the symbol is resolved to an offset inside your binary already. In QML a particular symbol lookup checks a whole hierarchy of contexts for the names of properties and items. If a property is added to an item, and that item has a binding to a property of the same name on the root item, then that could now resolve to the current item and you’ve changed the behavior of the app. If you had a Button.qml and we add a Button type to QtQuick, you might now resolve Button{} to mean a different type all together. Naturally we decided to take action to allow us to add properties or types ever again in the history of the language.</p>
+<p>That problem is dealt with by forcing types into a specific version. When you add a new type you specify which version it was added in. The QML engine only loads types for that version, assuming that minor versions only add types and don’t remove them. You can also add properties, methods and signals to existing objects in later minor versions – if a lesser minor version is imported then those symbols aren’t available to muddy the waters. When the system Qt goes from 4.7-&gt;4.8 existing applications work just as before even if they had a PinchArea.qml or a property int lineCount on the root item. The binary interface for QDeclarativeEngine remained the same, it calls the new code to do roughly the same QML interpreting, but the QML interpreter can just pretend the new QtQuick 1.1 types and properties are not there. So a QtQuick 1.0 application will remain working until the application developer gets around to fixing it, should a potential conflict arise.</p>
+<p>The level of detachment is even a little better than binary compatibility, because we don’t need d-pointers to handle protecting the backend. You could completely rewrite an element between versions and then register different C++ classes to the same type name at different versions. Complete backend rehaul, transparent to the user, sound familiar? This was the ideal for the QtQuick 2 transition as we knew we had to get away from Graphics View eventually.</p>
+<p>As a quick digression, I’ll explain what’s wrong with Graphics View(GV). It’s not strictly worse, or better, than other options like SceneGraph(SG) – merely different. GV is great for multiple views on large numbers of static, custom items on a canvas. A 2D TBS with massive maps and thousands of units? GV could handle that with ablomb and easily allow you to have multiple views and minimaps (unless you animated the units). CAD applications were another thing GV’s feature set kept reminding me of. Not exactly the requirements for QtQuick though. Our items aren’t static, they’re highly animated. They aren’t combined custom items, they’re composed of many primitives. And QtQuick UIs never care about multiple views onto the ‘scene’ because it’s supposed to be a pixel perfect UI. Scene Graph is much better for these uses, with an additional embedded focus in the design to get the most out of hardware acceleration.</p>
+<p>So that’s why the GV to SG transition was a foreseeable inevitability. What could theoretically happen given the versioning system is that we totally replace the backends for all the items and you don’t notice, you just import QtQuick 2.0 and suddenly everything’s faster. I remember when I was young and naive enough to believe that would actually happen…</p>
+<p>Back in reality, there are two issues that prohibited such an easy transition. The major one is that it’s just too big a change. The displaying widget/window changes because it’s now a single integrated scene and view object. The completely different scene/canvas/window leads to a different base class for the item (QQuickItem has all the canvas integration now, no QGraphicsObject subclassing). The base class was pretty integral to the canvas anyways, as the definition of what was rendered originally came from traversing the tree of QGraphicsObjects and calling paint() to imperatively paint with QPainter. SG doesn’t so that, it generates paint nodes in updatePaintNode which will later paint the item using openGL. The canvas change done right just can’t be swept under the rug, this fundamental change to the base class and canvas is the reason why QtQuick 1 and QtQuick 2 don’t mix.</p>
+<p>The other issue? QtQuick is too young to try to maintain that level of compatibility. Remember when you were young and did stupid things? I’m still there now, but the experienced reader is probably immensely grateful that they changed and over time the whole world forgot those things. QtQuick 1 had mistakes in it, and a major version change from 1-&gt;2 is the time to fix those mistakes regardless of the API incompatibilities. Some of this was just name changes, which are hard to justify, but for those that are obviously better names they needed to be fixed now or they’d never have a chance.</p>
+<p>So now QtQuick 2 is a separate version that can’t mix in the same scene with QtQuick 1. While for the most part it’s API is compatible and the same, there is a bevvy of improvements you might need to adapt to. All listed on <a href="http://doc-snapshot.qt-project.org/5.0/qtquick-porting-qt5.html" title="Porting QtQuick 1 to QtQuick 2">the porting page</a> I hope.</p>
+<h3>How is this implemented?</h3>
+<p>Pretty much explained in the last section: the engine controls which symbols resolve to which types (or at all) based on both what is registered with the engine and what the user requested. The important point is that it’s done for you in the engine. Those who want to hack on the engine, I’ll just point you to QQmlType::availableInVersion, line 299 of qtdeclarative/src/qml/qml/qqmlmetatype.cpp . But that’s primarily to distract you from realizing that I don’t work with the engine that much <img alt=";)" class="wp-smiley" src="http://alan.imagin-itis.net/wp-includes/images/smilies/icon_wink.gif">  .</p>
+<h3>Q’s</h3>
+<p>Now I will try to list some common questions and respond at moderate length. We’ll call it a Q ML session.</p>
+<p><strong>Q:</strong> Why not just use Qt versions?<br>
+<strong>ML:</strong> Note that we did in 4.7. The first thing we did was try to get that changed, because we realized we weren’t going to match the Qt release numbering with the QML version rules. QtQuick 1.1 was needed fast and Qt minor releases at the time were slow. QtQuick 1.1 came out in 4.7.4, and while arguably that’s more features than a patch release we justified it by the fact that no C++ API was added. C++ features crept in for other modules too in 4.7.x so maybe patch releases just weren’t being respected anyways. QML had just emerged from the chrysalis, and its development pace was faster than Qt because of it. This is still true, and I expect QtQuick 3.0 to come out during the Qt 5.x series. This is why Qt version semantics only apply to the C++ API and QML version semantics apply to the QML API.</p>
+<p><strong>Q:</strong> Why no Qt4Support like module for Qt Quick 1?<br>
+<strong>ML:</strong> Because Qt Quick 1 is in Qt 5. In terms of something that allows QtQuick 1 and QtQuick 2 in the same scene, the fact they use different canvases to render makes it very difficult to write a compatibility layer. Theoretically you could create a QtQuick1 element which renders a graphics scene into a QQuickPaintedItem and use that as a container. But the performance would be terrible, on par with QGraphicsProxyWidget probably, and it would take a while to write. From my perspective, it’s not worth putting a lot of effort into an element that you’ll just recommend everyone to pretend doesn’t exist.</p>
+<p><strong>Q:</strong> Why is Quick1 in Qt5?<br>
+<strong>ML:</strong> This is similar to how distros will probably package 4.x for some time – just that we’ve managed this separately for QML. QtQuick 1 applications shouldn’t be forced to upgrade overnight, and with the new modular nature of Qt the lean embedded platforms can easily remove it from the build. There are also some theoretical cases where your application can port pieces at a time from QtQuick 1 to QtQuick 2, and other theoretical cases wher QtQuick 1 development picks up again. Bottom line, recompile your application as soon as Qt 5 ships and then worry about QML porting at your leisure <img alt=":)" class="wp-smiley" src="http://alan.imagin-itis.net/wp-includes/images/smilies/icon_smile.gif">  .</p>
+<p><strong>Q:</strong> What about libraries of UI components which need to support multiple QtQuick versions?<br>
+<strong>ML:</strong> They get to weep quietly while they maintain two codebases. That’s what QtQuick did, although we restrict the feature development to QtQuick 2 now. It sucks, but I’m not aware of a solution given the radically different visual canvases that the element sets are based on.</p>
+<p><strong>Q: </strong>Are we going to have the same problem with QtQuick 3 in Qt 6?<br>
+<strong>ML:</strong> I hope not. Scenegraph is brand-new and should last a long time. Without a major change to the canvas, QQuickItem 3 should be compatible with QQuickItem 2 and then you can mix and match the version like the theory intends. That major version is much more likely to be because of significant redesigns to the element set, like maybe someone convinces me to replace positioners with layouts <img alt=":P" class="wp-smiley" src="http://alan.imagin-itis.net/wp-includes/images/smilies/icon_razz.gif">  .</p>
+<p><strong>Q:</strong> What if I always want the latest and greatest?<br>
+<strong>ML:</strong> You don’t. I have heard people asking why you need to import one version instead of just getting the latest like you do with a system Qt. But that’s only true and viable between minor/patch releases, not major versions. So I hope no-one is actually thinking that you can just import any arbitrary later version and it’ll still work. Minor versions are supposed to be adding new functionality, so I don’t see why you’d care about that until you actually use that functionality (which means touching the code, you can update the version statement). The only reasonable part of that request I can think of is patch releases, if the backend becomes faster or more correct you might want that to just apply magically to your application. This is why you don’t pick a specific patch release in QML versions <img alt=";)" class="wp-smiley" src="http://alan.imagin-itis.net/wp-includes/images/smilies/icon_wink.gif">  . Because QML versions are about the exposed API, there is no patch release. The patch release for QML is based on the C++ and so it’s the same as Qt’s. Qt 4.8.2 might be quite some time after QtQuick 1.1, but bugfixes for QtQuick 1.0 functionality still apply if you use QtQuick 1.0 from Qt 4.8.2. Pure QML modules can add a patch release number to their releases for packaging, i.e. you might find qtdesktop.1.1.2.i686 in your package manager, but the QML using them just imports 1.0 or 1.1 for the API and gets all the patches anyways.</p>
+<p><strong>Take-home summary:</strong> QML Versions control the API available to avoid symbol resolution problems, and the big break between QtQuick 1 and QtQuick 2 was just too big a break for even this version system to hide.</p>
+
+TITLE:The first public release of Enki
+
+SOURCE:Monkey Studio IDE
+
+CONTENT:
+<p>I started mksv3 project 2 years ago. It those time, it was not clear if it will be next version of MkS or separate project.<br>
+You can read about it <a href="http://monkeystudio.org/node/165">here</a></p>
+
+<p>Now the project got it's own name: <strong>Enki</strong>, and it's own website: <a href="http://enki-editor.org">http://enki-editor.org</a></p>
+
+<p>During 2 years I've made few releases. But, project was mentioned only here and in few mailing lists. I didn’t do any public announcements. Because the project was not ready. Not better, than other text editors. But, now I think it is right time. This is already not a prototype, but really useful software.</p>
+
+<p>10 August 2012. <strong>Enki birthday!</strong></p>
+
+<p><a href="http://monkeystudio.org/node/173" target="_blank">read more</a></p>
+
+TITLE:Digia acquires part of Nokia’s Qt business
+
+SOURCE:» KDAB on Qt
+
+CONTENT:
+<p>It was announced this morning that Digia Plc will acquire the “Qt software technologies and Qt business” from Nokia. This ends the recent uncertainty in the Qt community, something that should be beneficial for the Qt ecosystem and the Qt users worldwide, including KDAB’s customers, and hopefully ensures the continuity and sustained funding of Qt development.</p>
+<p>KDAB is the second largest contributor to Qt5 today, and others are also investing heavily. There are some more quite big organizations in the desktop, industrial automation, automotive, IPTV space and elsewhere which are deeply committed to Qt and will contribute to keeping it moving forward. Qt5 is going to be released soon and, in our estimation, provides a great foundation to build on for many years (remember, it is already more than seven years since Qt4 was released, and it is still going very strong). Nokia selling Qt mostly means that their priorities, in particular with respect to their platforms, are less of a concern in Qt development now, while the priorities of organizations that contribute more, such as KDAB and our customers that we support, will gain more weight. Of course, it is also KDAB’s hope and strong expectation that Digia will start contributing more to Qt so that the Qt ecosystem as a whole can move the technology ahead at an unreduced or even increased speed. Digia’s announcement in that respect sounds very promising, something KDAB applauds.</p>
+<p><span id="more-2499"></span></p>
+<p>Qt continues to be the only viable option for cross-platform (Mac, Linux, Windows) development on the desktop, the only viable option for high performance native development of modern applications in the embedded space, both consumer and industrial, and a great foundation for building OpenGL and HTML5 stacks for front-end development using those technologies.</p>
+<p>KDAB is extending both hands to everybody contributing to Qt and hopes for joint efforts to make Qt better than ever. In particular, it is important that as many Qt developers as possible find a new home, even those not part of the deal announced today, and KDAB will attempt to contribute its share to that, too. As for marketing Qt to potential users, ICS and KDAB have already announced that they will host the Qt Developer Conference in California and Berlin this year, and the vast majority of players in the ecosystem are quickly rallying behind that.</p>
+<p>Personally, I have worked with Qt since 1996, and at no time between then and now has there been a more intense and productive development going on in Qt. Qt is embodying so many technologies and platforms these days that it is almost impossible for a single person to keep up with all developments, and it just keeps going on.</p>
+<p>If you have any further questions about this matter, or would like to learn more about how KDAB can help you get the most out of Qt, please do not hesitate to contact us by any of the means listed at <a href="http://www.kdab.com/kdab-contact-details/">http://www.kdab.com/kdab-contact-details/</a>.</p>
+<p style="text-align: right;"><strong>Matthias Kalle Dalheimer</strong><br>President and CEO of KDAB</p>
+<p style="text-align: right;">&nbsp;</p>
+<p style="text-align: right;">&nbsp;</p>
+<p style="text-align: right;">&nbsp;</p>
+<p style="text-align: right;">&nbsp;</p>
+<p style="text-align: right;">&nbsp;</p>
+
+TITLE:Qt 5 Under Digia – A New Chapter Beckons
+
+SOURCE:Incorrigible Imaginings » Qt - Incorrigible Imaginings
+
+CONTENT:
+<p>You need to read the Qt blog before mine, <a href="http://blog.qt.nokia.com/2012/08/09/digia-extends-its-commitment-to-qt-with-plans-to-acquire-full-qt-software-technology-and-business-from-nokia/" title="The Qt Blog">Digia’s acquisition post</a> is assumed knowledge for this post. I for one welcome Qt’s new corporate overlords and hope this is a lovely trolltech-style period of fantastic development; before another huge company buys Qt for millions. Qt deserves another chance at world domination in a few years.<br>
+<span id="more-307"></span></p>
+<p>I personally hope to continue working with the Qt project to develop QML after leaving Nokia. I’m not joining Digia, the Brisbane office closes end of August and is not part of the transaction, but with open governance I am very optimistic about trying life on the community side of Qt Development. As you may guess, today’s news also hasn’t dampened my enthusiasm about particles. Someone has to keep particles running in order to ensure Qt is the most sparkly UI toolkit around.</p>
+<p>Some amusingly worded legalese means this could be my last chance to say bad things about Nokia <img alt=":P" class="wp-smiley" src="http://alan.imagin-itis.net/wp-includes/images/smilies/icon_razz.gif">  . Unfortunately I don’t have anything particularly negative to say about the company. The closing of the Brisbane office has so far been a model operation, and I agree with the decision that Qt is no longer a good fit for Nokia (honestly it was always a weird pairing but I think everyone could benefit from Qt <img alt=";)" class="wp-smiley" src="http://alan.imagin-itis.net/wp-includes/images/smilies/icon_wink.gif">  ). Nokia’s biggest failing while they had Qt was their constant strategic shifts – I watched as Qt became the messiah for at least three platforms that were publicly executed about a year later. That’s far too soon for Qt to make a difference, for those thinking we killed them. The current Nokia strategy may not be going well, but it’s still better than killing yet another platform they made a public commitment to. I could just be bitter because on the first cycle I was excited enough to encourage a friend to get an N900. That was on a deal with a two year contract, and mere months before Maemo was publicly axed and development dried up. I had several opportunities to make the same mistake again, but I had learned my lesson. I think Nokia has finally learned that lesson too. As I leave the company, I wish Nokia the best of luck with its Windows Phone 7 strategy.</p>
+<p>This shift in Qt development focus is really gratifying to the arm-chair general in me. Now that Qt is under new management, they’re moving in the direction I’ve been most hopeful for: cross-platform. I’ve never really accepted “web apps” as a viable solution compared to native apps, but I understand that it’s better to have <em>something</em> working on all targets than to be mired in learning Java, Objective C, and C# before writing and debugging the same application three times. I may think that HTML is twice as hard and convoluted as app development should be, but that’s still 50% better than that last sentence (which was also difficult and convoluted). If you’re targeting all the platforms it’s nirvana to limit the rewrite to just the part that needs to change: the user experience. Android and iOS are as legitimate development platforms as desktop these days and the world cries out for a high-quality native app toolkit that crosses these boundaries. Today’s news has not dampened my enthusiasm about Qt and QML one bit. There is however one thing that my inner arm-chair general would like to expound upon, at length…</p>
+<h2>Widgets Rant</h2>
+<p>On the whole I am pleased with Digia’s stated commitment to widgets. I just hope that Digia doesn’t think widgets are the same cross-platform solution that they were for ye olde Trolltech. Widgets are great for certain UIs, UIs that are a bit out of fashion these days but still quite effective. I’m glad to hear they will receive loving care again (at least, I got that impression from the Qt blog post). But they quickly run into limitations on embedded or mobile UIs. The Brisbane office ran into this with Qtopia, which was an attempt to take Qt and Qt widgets and make an appealing mobile stack with it. Let me delineate those limitations from my perspective, this comes primarily from my experience on Qtopia way back in 2007:</p>
+<ol>
+<li><strong>Expensive</strong><br>
+I’ll start with the example that stands out to me in this area. One type of widget that seems to be missed greatly in QML are the layouts. They are really convenient, they use the space well and lay things out easily and with parameterized control. You can use them everywhere, really convenient, great for desktop UIs. But their awesome power comes at a terrible cost, let’s use cpp file size as a proxy for implementation complexity and performance:<br>
+<code><br>
+wc -l src/widgets/kernel/q*layout*.cpp<br>
+8593 total<br>
+wc -l src/quick/items/qquickpositioners.cpp<br>
+1699 items/qquickpositioners.cpp<br>
+</code><br>
+q*layout*.cpp was used to catch all the various parts involved like qlayout.cpp, qlayoutengine.cpp, qlayoutitem.cpp and the various different layout implementations like Box, Stacked, Grid and Form layouts. But those three backend files alone are larger than qquickpositioners.cpp, which contains both the infrastructure base class and the implementations of the four positioner types (they’re so tiny, it barely makes sense to put them in their own files). Positioners do less, that’s why they’re called Positioners. They only position, they do no expensive cooperative resizing. But they also do more in that they have animation capabilities beyond those of the widget layouts because that’s also cheap with QML (the widget backend isn’t as amenable to animation as QML). <p></p>
+<p>Layouts vs Positioners is a representative sample of the performance implications of widgets vs primitives. The QtQuick primitives only do the cheapest stuff, so it’s not that expensive to throw them around everywhere. Its also pretty cheap to animate their properties and reevaluate the layout code for every single frame. The widgets try to do everything, so they are super-convenient but just lag out if you hit hardware performance constraints. Hint: You regularly run into those on mobile. If you want it to be as smooth as velvety butter, like everyone does these days, you have to consider the performance of your UI components and trim the unnecessary functionality on a per UI basis.</p>
+<p>Perhaps it’s because I wrote most of them, but the positioners are where I always think of this problem. Half the time I use a Column I want it to just do my sizing for me like a VBoxLayout. But then I remember that the same Column{} might then be used in a ListView delegate and have thirty instantiated every second while it tries to scroll smoothly. I can’t screw up that vital use-case because some other times I might use that functionality. Even a default off boolean flag would harm that usecase, because we want the performance to ‘just work’ for developers who use QtQuick. Adding the boolean means people will turn on the boolean, then use it in a delegate, then spend a day trawling the docs trying to figure out why their scrolling is no longer smooth. Then they’ll rewrite it hastily with the boolean off because they’re annoyed. Note that in that specific case, a second set of elements where you choose to incur that cost would work. But no-one has written them yet, and they can’t replace the QtQuick primitives.
+</p></li>
+<li><strong>Platform Specific</strong>
+<p>This claim may sound crazy at first. I can already hear people screaming that widgets are the core of Qt’s cross-platform solution. Well that’s true – for desktops. The three desktop platforms all run on practically the same hardware. Mac may try to throw in as many arbitrary differences as it can, but it’s still fundamentally the same hardware, ergo same hardware user interface. For a screen that big, with a mouse and keyboard, certain UI elements and general designs work. This is especially true with the convention that windows don’t take the whole screen and can re-size fluidly (in rectangles). This is what widgets were made for, buttons that are ‘pressed’ when you hit space bar or click. Combo boxes with text completion and scrollbars. Works great on all desktop platforms, not originally designed for a tiny touch screen. And even if it was, it would have been a resistive touch screen not capacitive. That alone makes a big difference, as it requires big buttons for touch friendly UIs whereas resistive screens work with a stylus approximating a mouse (especially with a hardware keyboard). You get the idea, the existing widget set is sub-optimal for devices. It can’t really be extended either – because that means letting mobile-optimized widgets creep into your desktop app and then that’s the version that sucks.</p>
+<p>This could be solved with significantly different implementations per widget, per platform. This is terribly expensive in resources to build and maintain, and means you’ll never know just how your app will look on another platform. That solution also makes widgets even more expensive in terms of performance. This is the approach that Qt Quick Components were originally aiming for, except that by using QML and separate implementations it’s feasible for each platform to have an efficient and effective implementation.</p>
+<p>The size of the screen, the different input device, the fact you have your thumb obscuring anything you try to press, mobiles are different devices in terms of input. They are not as similar as the desktop platforms and this makes the cross-platform UI idea exponentially harder. Speaking to Mac developers I’ve heard that Qt on Mac still hasn’t managed to make UIs that fit in well despite it being the same hardware! This is why for A-Grade applications I’ve given up on the cross-platform UI approach. It’s easier to just have a great, flexible UI toolkit where the UI layer can be easily decoupled from the (truly portable) logic. It’s the obvious way to get pixel perfect results on time, every time.
+</p></li>
+<li><strong>Inflexible</strong>
+<p>Mobile UIs are much more likely to have custom UI styling instead of trying to ‘look native’. Maybe it’s just the proliferation of casual games, or the fact that I still do all my work with my ivory tower box. Or perhaps its because embedded platforms and fledgling mobile platforms don’t have a pre-existing native style baked into the widget classes. Styling a widget for an entirely custom look? You can use style sheets to tweak parameters, or write your own QStyle, but that’s not easy. The easy approach is to just reimplement it yourself, a MyButton widget that you paint manually. Widgets were made to look native, not look like you want them too, until you write custom ones.</p>
+<p>This is why QtQuick offers primitives, not widgets. The QtQuick Components project can make widget like controls with QtQuick, when they have the time. They’ve already done it for 3-5 platforms (how many does the Desktop components count for?) which I’m aware of. These primitives are the right level of item from which to build a custom UI, whether that’s for a custom looking UI or just to write the platform styled controls. That extreme flexibility may hurt it in the short term while there are no controls for desktop shipped with Qt. But if you want something different than what the standard widgets provide, QML makes it a lot easier now (and just use widgets if they do what you want!).
+</p></li>
+</ol>
+<p>Those are the three main issues I saw trying to use QtWidgets on mobile, and the ones that convinced me that QML (or another such approach) is the future for mobile UIs.</p>
+<p>I want to see widgets working on embedded platforms, as they are still the most expedient method of building a cross-platform UI. I had some widget filled applications on the N900, they were plentiful and functional. They were hideous eyesores in terms of aesthetic design, but you can’t have everything. You couldn’t easily make a great looking mobile app with widgets for the reasons described above. The quick and dirty apps work like a charm and I don’t deny they’re an important usecase. If I was just trying to get an app where some buttons triggered a backend, but across all my devices at home(I currently have three Nokia devices, so three separate platforms there, two major versions of Android, plus Linux and Windows PCs) I’d use widgets[1]. But if you want an app that’s smoothly animated, fits the device perfectly, and has your own custom UI? You may as well write a MyWidget that manages the whole thing internally for all the help QWidget provides; seriously, that’s your best bet. QML is lighter weight, more flexible, and based off primitives that aren’t associated with any platform. </p>
+<h2>Of the Previous Chapter…</h2>
+<p>Since I don’t like living in the past, I’ll tack my quick Trolltech/Nokia retrospective on the end here.</p>
+<p>I only joined Trolltech less than a year before it was acquired. I spent that time first as an intern on Qtopia and then wrote the Qtopia theme editor. The Nokia acquisition was perfectly timed for me – I had just finished the theme editor and passed it to QA. I got to do all the fun part of developing it without any boring maintenance <img alt=":D" class="wp-smiley" src="http://alan.imagin-itis.net/wp-includes/images/smilies/icon_biggrin.gif"> . I never understood why Nokia didn’t want Qtopia, but with that cancelled we moved onto developing <a href="http://qtmemes.tumblr.com/post/21431282502/hipster-kitten-thinks-qml-was-so-much-cooler" target="_blank" title="Ye Olde QML">the first iteration of QML</a>. It was a great research project, trying to figure out the best way to write mobile UIs that don’t need to hack the QApplication event filter. Unfortunately, our mandate was actually to just write the next version of .ui files. We had overstepped the bounds quite a bit, and eventually got cancelled for that (we got champagne as a consolation prize but we still haven’t drunk it). The month after we were cancelled was also a lot of fun, as we were encouraged to learn new things while we waited for another project. I learned OpenGL, and how to cook a gourmet breakfast for the entire team. Eventually we were un-cancelled because we had something working and it turns out that’s pretty valuable. It wasn’t long before QML began to mature to a demonstrable level:<br>
+<br>
+The blinking text isn’t post-processing and is included in the code line count.</p>
+<p>It’s around this point that I went to Oslo for eight months, because that’s long enough to justify the 30 hour journey each way. It was a great office, and not just because they reopened my eyes to the joy of Starcraft. Far away from my home office, I spent most of my time evangelizing QML and growing a mustache (I think there’s one guy who now has those two permanently associated in his mind). Jeg også lært litt norsk, og å langrennski.</p>
+<p>I returned to Brisbane in time to work on QtQuick 2.0, and got a prize assignment. The most essential part of a modern, fluid UI is the particle system and we only had a labs level particle system in Qt Quick 1. For QtQuick 2.0 to be taken seriously, it needed a world-class particle system. So that’s what I wrote for the next year. It’s powerful, versatile and hardware accelerated, but along the way I realized just how few use-cases we had. Those we had were being performed admirably, but my inspiration far too often turned to graphics scene tech demos; which is just the wrong league. Once QtQuick 2 starts being used in actual UIs I hope to fine-tune the particle system towards where it can provide the most convenient aesthetic punch. Recently I’ve been noticing particles in more games (Bastion has wonderful particles), so perhaps I can use that to refine my understanding of the use-cases.</p>
+<p>Then we worked on a secret project for a while. While interesting, I tend to prefer work that I can talk about openly. In the [redacted] project, we did some great stuff. We [redacted]. [redacted] QML [redacted]. We even managed to overcome [redacted] and against all odds [redacted]. And I worked on cool [redacted] with [redacted]! It was fun but it’s a bit depressing that everything I say about it will just end up redacted. Especially since you can read the whole story on Engadget – alas that doesn’t lift my obligation to secrecy.</p>
+<p>We finally got a UI designer to work with in 2012, but by then it was too late. Existing demos were revitalized with fresh and mobile-styled designs, but we didn’t have time for research. At least SameGame evolved from the 300 LoC toy into a full game with four game modes including a set of QML levels I designed[2]. I also like the one time that I was wrote a custom shader to get the specific effect the designer wanted (in tweetsearch), a shame we didn’t do anything like that with particles. So that’s why the new Qt 5 demos don’t look like I just re-used the same bear-with-umbrella graphic everywhere. And if they do, at least the bear-with-umbrella looks better than the graphic it replaced: an animated smiley face I drew pixel by pixel.<br>
+<br>
+There’s the abridged version of my Trolltech/Nokia story. I left out the stuff like the christmas party weekend at the beach resort, or the office response to my singing Gilbert and Sullivan (hint: they preferred my rendition of Jonathan Coulton’s work). I’m sure older trolls will provide all the colorful details and drinking stories. As for me I’ll just take my armor and ride along, singing from “Man of La Mancha”: And the wild winds of fortune will carry me onwards, o’ wither so ever they blow.</p>
+<p>[1]Okay, “I” wouldn’t use widgets. I’d use QML because I just like QML, and have even been referred to as Mr. QML on occasion. But I’d honestly advise other people to use widgets.<br>
+[2]Designed is a bit strong a word for levels that I threw together in one afternoon. I still haven’t managed to clear level ten, but I assume someone with more time to devote to testing it would be able to <img alt=";)" class="wp-smiley" src="http://alan.imagin-itis.net/wp-includes/images/smilies/icon_wink.gif">  .</p>
+<p>Edit: Since I only started writing about QML on this blog recently, I should add to the retrospective that I used to write blog posts for Nokia: http://labs.qt.nokia.com/author/aalpert/. I also wrote one Qt Quarterly article, http://qt-project.org/quarterly/view/qt_quick_quits_quiescence .</p>
+
+TITLE:Qt Creator 2.5.2 released
+
+SOURCE:Qt Labs Blog
+
+CONTENT:
+<p></p><p>Qt Creator 2.5.2 contains only a single bugfix that is important to all Windows (7) users:</p>
+<ul>
+<li>Fixed resource leak leading to regular crashes on Windows (QTCREATORBUG-7385)</li>
+</ul>
+<p>So, if you are a Windows user of Qt Creator, I advise you to quickly go to our <a href="https://qt-project.org/wiki/Qt_Creator_Releases">download page</a> to get the new version. Everyone else can safely ignore this release.</p>
+
+TITLE:Digia extends its commitment to Qt with plans to acquire full Qt software technology and business From Nokia
+
+SOURCE:Digia's Qt Commercial Blog
+
+CONTENT:
+<p>As you may have heard, Digia announced announced its plans to acquire the Qt technology and business from Nokia. I am excited about this news as it secures Qt’s future as the leading cross-platform development framework. The planned acquisition...
+</p>
