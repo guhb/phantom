@@ -3,9 +3,9 @@ ASP.NET_SessionId=vw0bex3ztfga532xhlkccxft
 
 [www.ifanr.com]
 w3tc_referrer=http%3A%2F%2Fwww.ifanr.com%2F
-ifanr_sidebar_showcase_index=1
+ifanr_sidebar_showcase_index=11
 __utma=104975067.45369383.1347357385.1347357385.1347357385.1
-__utmb=104975067.12.10.1347357385
+__utmb=104975067.18.10.1347357385
 __utmc=104975067
 __utmz="104975067.1347357385.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)"
 __utmv=

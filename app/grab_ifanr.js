@@ -21,6 +21,7 @@
 	    }
 
 	    console.log("Analyse finished.");
-	    return articleList;
+
+        return articleList;
 	}
 })(page, gConfig);

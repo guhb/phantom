@@ -1,4 +1,10 @@
 
+TITLE:Everpurse：能无线充电的皮包
+
+SOURCE:陈一斌
+
+CONTENT:<p style="text-align: center;"><a href="http://www.ifanr.com/152189" target="_blank" rel="external"><img class="alignnone size-full wp-image-152195" title="Everpurse 4" src="http://www.ifanr.com/wp-content/themes/apple4us/images/grey.gif" alt="" width="600" height="375" original="http://cdn.ifanr.cn/wp-content/uploads/2012/09/Everpurse-4.jpg"></a></p><p>外置电池又笨又重又丑，而且每次充电还必须拿出来，给手机插上充电线，无怪乎“无线充电”这个概念受到人们欢迎。那些密密麻麻，相互缠绕在一起的充电线、电源线让人感到烦躁。</p><p>在 Kickstarter 上，<a href="http://www.kickstarter.com/projects/everpurse/everpurse-magically-charges-your-phone-all-day#DoesThePhonGetCharWire" target="_blank">Everpurse</a> 将皮包变成了移动电源——若它只是一个<a href="http://www.ifanr.com/74043">能充电的手提包</a>的话，那么就没有介绍的必要——它实际上是一个结合了无线充电技术的皮包，而且使用起来简单方便，当你的 iPhone 没有电时，只要将手机放进皮包里面，就会自动充电。 <a href="http://www.ifanr.com/152189#more-152189" class="more-link">全文 » </a></p>
+
 TITLE:玩具反斗城推出平板奇兵
 
 SOURCE:陈一斌
@@ -52,9 +58,3 @@ TITLE:WorkFlowy：整理你的思绪
 SOURCE:陈一斌
 
 CONTENT:<p style="text-align: center;"><a href="http://www.ifanr.com/150811" target="_blank" rel="external"><img class="alignnone size-full wp-image-150835" title="url" src="http://www.ifanr.com/wp-content/themes/apple4us/images/grey.gif" alt="" width="600" height="375" original="http://cdn.ifanr.cn/wp-content/uploads/2012/09/url.jpeg"></a></p><p>不知你是否患上“应用选择困难症”，好看的应用不好用，好用的应用不好看。前者往往过于简单，后者往往过于复杂。</p><p>比如说 To-do 类应用，简单地新建一个待办事项都让人头大——后续的考虑往往太多。不但要判断这件事应该归于哪一类，还要判断优先级如何，甚至还可能要判断做完这件事要多长时间。等问完这些问题，时间可能已经过去 15 分钟。到底应用是帮人节约时间还是浪费时间？ <a href="http://www.ifanr.com/150811#more-150811" class="more-link">全文 » </a></p>
-
-TITLE:超半数美国人因隐私问题放弃移动应用
-
-SOURCE:何宗丞
-
-CONTENT:<p><a href="http://www.ifanr.com/151541" rel="external"><img class="aligncenter size-full wp-image-151569" title="User privacy" src="http://www.ifanr.com/wp-content/themes/apple4us/images/grey.gif" alt="" width="600" height="375" original="http://cdn.ifanr.cn/wp-content/uploads/2012/09/User-privacy.jpg"></a></p><p>智能手机和移动应用在给用户带来便捷的同时，也催生了一系列的隐私安全问题。频频出现的应用泄漏用户信息的案例让不少用户对个人隐私心存疑虑。由于移动应用上的最终用户许可协议以及隐私政策尚不明确，用户通常陷入了一个“隐含协议”——他们并不了解应用暴露信息的程度如何。因此面对应用授权，极其重视隐私保护的美国人会显得异常谨慎，这种行为甚至直接影响到应用的安装和卸载。</p><p>皮尤研究中心（Pew Research Center）近日对美国成年人在手机上的隐私和数据管理行为进行了一次<a href="http://pewinternet.org/Reports/2012/Mobile-Privacy.aspx" target="_blank">调查</a>。在目前 88% 持有手机的美国成年人中，43% 的人会下载使用应用程序。调查显示： <a href="http://www.ifanr.com/151541#more-151541" class="more-link">全文 » </a></p>

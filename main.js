@@ -19,9 +19,9 @@ if (system.args.length === 1) {
         } else {
             page.loadLibrary(gConfig.libraries.files, gConfig.libraries.path);
             page.loadApp("grab_ifanr.js", gConfig.appDirectory);
-            //phantom.loadPlugins("save.js", "util");
-            //console.log(page.util);
-            //page.util.save(gConfig.downloadDirectory + "/" + "planet-qt.txt", "page.util.save", "a");
+            phantom.loadPlugins("save.js", "util");
+            console.log(page.util);
+            page.util.save(gConfig.downloadDirectory + "/" + "planet-qt.txt", "page.util.save", "a");
             // run the app and collect retruned data;
             var articles = page.evaluate(page.app);
 
