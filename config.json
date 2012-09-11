@@ -1,0 +1,7 @@
+{
+	'cookiesFile' : 'cookies.txt',
+	'diskCache' : true,
+	'ignoreSslErrors' : false,
+	'loadImages' : false,
+	'localToRemoteUrlAccess' : false
+}
