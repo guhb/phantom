@@ -21,7 +21,10 @@ if (system.args.length === 1) {
         if (status !== 'success') {
             console.log('FAIL to load the address');
         } else {
+            // load helper library to the page context.
             page.loadLibrary(gConfig.libraries.files, gConfig.libraries.path);
+
+            // load app and run.
             page.loadApp(gConfig.apps.grabIfanr);
         }
         phantom.exit();

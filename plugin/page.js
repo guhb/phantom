@@ -32,16 +32,18 @@
     }
 
     page.loadLibrary = function (libScripts, libPath) {
+        var path = "";
         if (libPath != null && typeof libPath == 'string') {
-            page.libraryPath = libPath;
+            //page.libraryPath = libPath;
+            path = libPath + "/";
         }
 
         if (libScripts != null) {
             if (typeof libScripts == "string") {
-                return _load(libScripts);
+                return _load(path + libScripts);
             } else if (typeof libScripts == "object" && libScripts instanceof Array) {
                 for (var i = 0, max = libScripts.length; i < max; i++) {
-                    if (!_load(libScripts[i])) {
+                    if (!_load(path + libScripts[i])) {
                         return false;
                     }
                 }
@@ -90,11 +92,15 @@
         }
     }
 
-    page.onLoadFinished = function () {
-        if (gConfig.debug.normal) {
-            console.log("Load finished.");
-        }
-    }
+    // This function is called by page.open
+    // after the page is loaded and already
+    // implemented in main.js as a callback
+    //
+    // page.onLoadFinished = function () {
+    //     if (gConfig.debug.normal) {
+    //         console.log("Load finished.");
+    //     }
+    // }
 
     page.onResourceRequested = function (request) {
         if (gConfig.debug.request) {

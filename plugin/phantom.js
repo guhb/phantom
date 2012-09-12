@@ -28,16 +28,18 @@
     }
 
     phantom.loadPlugins = function (libScripts, libPath) {
+        var path = "";
         if (libPath != null && typeof libPath == 'string') {
-            phantom.libraryPath = libPath;
+            //phantom.libraryPath = libPath;
+            path = libPath + "/";
         }
 
         if (libScripts != null) {
             if (typeof libScripts == "string") {
-                return _load(libScripts);
+                return _load(path + libScripts);
             } else if (typeof libScripts == "object" && libScripts instanceof Array) {
                 for (var i = 0, max = libScripts.length; i < max; i++) {
-                    if (!_load(libScripts[i])) {
+                    if (!_load(path + libScripts[i])) {
                         return false;
                     }
                 }
