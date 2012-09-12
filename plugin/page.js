@@ -38,18 +38,51 @@
 
         if (libScripts != null) {
             if (typeof libScripts == "string") {
-                _load(libScripts);
+                return _load(libScripts);
             } else if (typeof libScripts == "object" && libScripts instanceof Array) {
                 for (var i = 0, max = libScripts.length; i < max; i++) {
-                    _load(libScripts[i]);
+                    if (!_load(libScripts[i])) {
+                        return false;
+                    }
                 }
+                return true;
             }
         } else {
             console.error("Library name must be provided.");
         }
+        return false;
     }
 
-    page.loadApp = phantom.loadApp;
+    page.loadApp = function (app) {
+        if (app == null || typeof app != "object") {
+            console.error("app dose not exist.");
+            return false;
+        }
+
+        var appDirectory = gConfig.appDirectory;
+        if (app.path && typeof app.path == "string" && app.path != "") {
+            appDirectory = appDirectory + "/" + app.path;
+        }
+
+        if (phantom.loadApp(app.file, appDirectory)
+            && page.app != null && typeof page.app == "function") {
+            console.log("App loaded.");
+        } else {
+            console.error("Fail to load app");
+            return false;
+        }
+
+        page.app.cache = page.evaluate(page.app);
+
+        if (app.dataFile && typeof app.dataFile == "string") {
+            page.app.dataFile = gConfig.downloadDirectory + "/" + app.dataFile;
+            if (page.app.save && typeof page.app.save == "function") {
+                page.app.save();
+            } else {
+                console.log("Missing data saving rutine, failed to save data cache.");
+            }
+        }
+    }
 
     page.onLoadStarted = function () {
         if (gConfig.debug.normal) {

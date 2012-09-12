@@ -12,10 +12,23 @@ var gConfig = {
         files : ["jquery.min.js", "underscore-min.js"],
         path : "lib"
     },
-    utils : {
-        files : ["save.js"],
-        path : "util"
-    },
     downloadDirectory : "download",
-    appDirectory : "app"
+    appDirectory : "app",
+    apps : {
+        grabPlanetKde : {
+            path : "",
+            file : "grab_planet_kde.js",
+            dataFile : "planet_kde.txt"
+        },
+        grabPlanetQt : {
+            path : "",
+            file : "grab_planet_qt.js",
+            dataFile : "planet_qt.txt"
+        },
+        grabIfanr : {
+            path : "",
+            file : "grab_ifanr.js",
+            dataFile : "ifanr.txt"
+        }
+    }
 };

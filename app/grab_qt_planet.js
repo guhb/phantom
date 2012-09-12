@@ -1,5 +1,6 @@
 (function (page, gConfig) {
     page.app = function () {
+        console.log("Analyse start.");
         var articles = document.getElementsByTagName('article');
         var titles = [];
         var sources = [];
@@ -22,5 +23,27 @@
 
         console.log("Analyse finished.");
         return articleList;
+    }
+
+    page.app.save = function () {
+        fs = require("fs");
+
+        function decorateContent(string) {
+            if (string.charAt(string.length-1) != "\n") {
+                string += "\n";
+            }
+            return string;
+        }
+
+        file = fs.open(page.app.dataFile, "a");
+        page.app.cache.forEach(function (item) {
+            file.write("\nTITLE:")
+            file.write(decorateContent(item.title));
+            file.write("\nSOURCE:")
+            file.write(decorateContent(item.source));
+            file.write("\nCONTENT:")
+            file.write(decorateContent(item.content));
+        });
+        file.close();
     }
 })(page, gConfig);
